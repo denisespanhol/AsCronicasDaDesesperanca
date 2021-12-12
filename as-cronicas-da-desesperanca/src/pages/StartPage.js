@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./StartPage.css";
 
 export default function StartPage() {
@@ -12,26 +13,33 @@ export default function StartPage() {
       </section>
       <footer className="footer toCentralizeFooter">
         <section className="toCentralizeButtonPrincipal">
-          <button
-            type="button"
-            className="designButtonPrincipal"
-          >
-            IR PARA O SITE
-          </button>
+          <Link to="/Chapters" style={{ textDecoration: 'none' }}>
+            <button
+              type="button"
+              className="designButtonPrincipal"
+              textDecoration="none"
+            >
+              IR PARA O SITE
+            </button>
+          </Link>
         </section>
         <section className="toCentralizeOthersButtons">
-          <button
-            type="button"
-            className="designOthersButtons"
-          >
-            SOBRE O AUTOR
-          </button>
-          <button
-            type="button"
-            className="designOthersButtons"
-          >
-            CONHEÇA O PROJETO
-          </button>
+          <Link to="/author" style={{ textDecoration: 'none' }}>
+            <button
+              type="button"
+              className="designOthersButtons"
+            >
+              SOBRE O AUTOR
+            </button>
+          </Link>
+          <Link to="/about" style={{ textDecoration: 'none' }}>
+            <button
+              type="button"
+              className="designOthersButtons"
+            >
+              CONHEÇA O PROJETO
+            </button>
+          </Link>
         </section>
       </footer>
     </main>
