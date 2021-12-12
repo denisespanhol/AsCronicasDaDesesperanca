@@ -133,3 +133,9 @@ body {
   width: 150px;
   font-family: 'Manuale', cursive;
 }
+
+button:hover {
+  background-color: rgba(102, 40, 40, 1);
+  color: rgba(18, 17, 17, 1);
+  cursor: pointer;
+}
