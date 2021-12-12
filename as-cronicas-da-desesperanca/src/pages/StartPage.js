@@ -22,13 +22,13 @@ export default function StartPage() {
         <section className="toCentralizeOthersButtons">
           <button
             type="button"
-            className="designOthersButtons1"
+            className="designOthersButtons"
           >
             SOBRE O AUTOR
           </button>
           <button
             type="button"
-            className="designOthersButtons2"
+            className="designOthersButtons"
           >
             CONHEÇA O PROJETO
           </button>

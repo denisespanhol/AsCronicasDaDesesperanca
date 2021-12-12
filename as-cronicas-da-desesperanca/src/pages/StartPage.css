@@ -103,25 +103,9 @@ body {
   font-family: 'Manuale', cursive;
 }
 
-.designOthersButtons1 {
+.designOthersButtons {
   display: flex;
   justify-content: center;
-  background-color: rgba(18, 17, 17, 1);
-  color: rgba(102, 40, 40, 1);
-  border: none;
-  padding: 10px 10px;
-  font-size: 11px;
-  border-radius: 50px;
-  margin: 2px;
-  height: 35px;
-  width: 150px;
-  font-family: 'Manuale', cursive;
-}
-
-.designOthersButtons2 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
   background-color: rgba(18, 17, 17, 1);
   color: rgba(102, 40, 40, 1);
   border: none;
@@ -138,4 +122,131 @@ button:hover {
   background-color: rgba(102, 40, 40, 1);
   color: rgba(18, 17, 17, 1);
   cursor: pointer;
+}
+
+/* Para telas maiores */
+@media screen and (min-width: 768px) {
+  body {
+    font-family: 'Manuale', cursive;
+    background-color: rgba(23, 22, 22, 1);
+  }
+  
+  .toCentralizeTitle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 13rem;
+  }
+  
+  .desesperança {
+    font-family: 'Overpass Mono', cursive;
+    font-size: 90px;
+    background: -webkit-linear-gradient(rgba(102, 40, 40, 1), rgba(102, 40, 40, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  
+  .asCronicasDa {
+    background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 25.3em;
+    margin-bottom: 0em;
+    font-size: 20px;
+  }
+  
+  .eODiaDeCaim {
+    background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 19.2em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: 25px;
+  }
+  
+  .livroI {
+    background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 40.5em;
+    margin-top: 0em;
+    font-size: 15px;
+  }
+  
+  .toCentralizeFooter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+  
+  .toCentralizeButtonPrincipal {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    margin-right: 4%;
+  }
+  
+  .toCentralizeOthersButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 4%;
+  }
+  
+  .footer {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: rgba(23, 22, 22, 1);
+    position: fixed;
+    bottom: 1.5em;
+    left: 0;
+    width: 100%;
+  }
+  
+  /* referência de footer: https://www.codegrepper.com/code-examples/javascript/react+footer+responsive. */
+  
+  .designButtonPrincipal {
+    display: flex;
+    justify-content: center;
+    color: rgba(102, 40, 40, 1);
+    background-color: rgba(18, 17, 17, 1);
+    border: none;
+    padding: 11px 27px;
+    font-size: 21px;
+    border-radius: 50px;
+    margin: 2px;
+    height: 52px;
+    width: 251px;
+    font-family: 'Manuale', cursive;
+  }
+  
+  .designOthersButtons {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(18, 17, 17, 1);
+    color: rgba(102, 40, 40, 1);
+    border: none;
+    padding: 15px 10px;
+    font-size: 15px;
+    border-radius: 50px;
+    margin: 2px;
+    height: 49px;
+    width: 202px;
+    font-family: 'Manuale', cursive;
+  }
+  
+  button:hover {
+    background-color: rgba(102, 40, 40, 1);
+    color: rgba(18, 17, 17, 1);
+    cursor: pointer;
+  }
 }
