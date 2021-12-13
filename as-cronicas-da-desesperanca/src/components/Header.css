@@ -39,6 +39,11 @@ nav {
   ;
 }
 
+.divNav {
+  padding-right: 6%;
+  padding-left: 6%;
+}
+
 .navLinks {
   background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
   -webkit-background-clip: text;
@@ -47,7 +52,87 @@ nav {
   flex-flow: column, wrap;
   font-family: 'Overpass Mono', cursive;
   font-size: 10px;
-  padding-right: 6%;
-  padding-left: 6%;
   padding-top: 7px;
+}
+
+.icon {
+  display: none;
+}
+
+/* para telas grandes */
+@media screen and (min-width: 1050px) {
+  header {
+    background-color: rgba(18, 17, 17, 1);
+    color: whitesmoke;
+    height: 7em;
+  }
+  
+  .toCentralizeTitleInHeader {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 2em;
+    padding-top: 1em;
+  }
+  
+  .desesperançaHeader {
+    font-family: 'Overpass Mono', cursive;
+    font-size: 40px;
+    background: -webkit-linear-gradient(rgba(102, 40, 40, 1), rgba(102, 40, 40, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 0em;
+    margin-bottom: -0.5em;
+    padding-bottom: 5px;
+  }
+  
+  .asCronicasDaHeader {
+    background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 0.35em;
+    margin-bottom: -0.5em;
+    font-size: 9px;
+    padding-top: 1em;
+  }
+  
+  nav {
+    display: flex;
+    flex-flow: row, wrap;
+    justify-content: flex-end;
+  }
+
+  .divNav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  
+  .navLinks {
+    background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-flow: column, wrap;
+    font-family: 'Overpass Mono', cursive;
+    font-size: 16px;
+  }
+
+  .navLinks:hover {
+    background: -webkit-linear-gradient(rgba(102, 40, 40, 1), rgba(102, 40, 40, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+  }
+
+  .icon{
+    display: flex;
+    margin-top: -2.9em;
+    margin-bottom: -1.2em;
+    color:rgba(203, 192, 194, 1)
+  }
 }
