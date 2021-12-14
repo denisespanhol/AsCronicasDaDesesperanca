@@ -41,8 +41,9 @@
   margin-bottom: -1em;
 }
 
+/* para telas maiores */
 @media screen and (min-width: 1050px) {
-  footer {
+  .theFooter {
     margin-top: 1rem;
     padding: 1rem;
     background-color: rgb(18, 17, 17, 1);
@@ -53,11 +54,10 @@
     height: 1.5em;
   }
   
-  .toCentralizeFooter {
+  .toCentralizeFooter2 {
     display: flex;
     flex-flow: row;
     justify-content: center;
-    border: 1.5px solid white;
   }
   
   .copyright {
@@ -66,24 +66,29 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 12px;
-    padding-top: 0em;
-    flex-basis: auto;
+    padding-left: 0em;
+    padding-top: 1em;
+    align-self:center;
+    margin-right: -30%;
   }
 
   .eODiaDeCaim {
+    display: flex;
     font-family: 'Overpass Mono', cursive;
     background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 12px;
-    padding-top: 0em;
-    flex-basis: auto;
+    padding-top: 1em;
+    padding-right: 0em;
+    margin-left: -25.5%;
   }
   
   .instaIcon {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: auto;
+    margin-bottom: 9px;
+    margin-left: 16px;
   }
 }
