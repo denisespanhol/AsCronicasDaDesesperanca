@@ -11,7 +11,7 @@ export default function StartPage() {
         <p className="eODiaDeCaim">E O DIA DE CAIM</p>
         <p className="livroI">LIVRO I</p>
       </section>
-      <footer className="footer toCentralizeFooter">
+      <footer className="startFooter toCentralizeFooter">
         <section className="toCentralizeButtonPrincipal">
           <Link to="/Chapters" style={{ textDecoration: 'none' }}>
             <button
