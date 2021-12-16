@@ -9,7 +9,7 @@ export default function ChaptersPage() {
   return (
     <section className='chapterBackground'>
       <Header />
-      <main>
+      <main className='mainBox'>
         <section className='toCentralizeChapterBox'>
           <p className='chapterNumber'>PRÓLOGO</p>
           <p className='chapterTitle'>Uma Luz Verde Num Céu de Maio</p>
@@ -23,13 +23,13 @@ export default function ChaptersPage() {
           <section className='chapterBox'>
             <img src={ comingSoon } alt='teste' className='coverImage' />
           </section>
-          <section className='toCentralizeChapterBox'>
+        </section>
+        <section className='toCentralizeChapterBox'>
           <p className='chapterNumber'>CAPÍTULO II</p>
           <p className='chapterTitle'>Ontem</p>
           <section className='chapterBox'>
             <img src={ comingSoon } alt='teste' className='coverImage' />
           </section>
-        </section>
         </section>
       </main>
       <Footer />
