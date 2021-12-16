@@ -83,7 +83,8 @@
     align-self: center;
     text-align: justify;
     width: 80%;
-    font-size: 14px;
+    font-size: 18px;
+    padding-top: 2em;
   }
   
   .toCentralizeReadingBox {
@@ -100,7 +101,7 @@
   .sobreOProjeto {
     display: flex;
     font-family: 'Overpass Mono', cursive;
-    font-size: 40px;
+    font-size: 36px;
     color: rgb(94, 30, 30);
     text-align: center;
     width: 20.35em;
