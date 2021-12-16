@@ -24,7 +24,7 @@ export default function AuthorsPage() {
               </section>
             </section>
             <p>
-              Denis Espanhol é autor de contos e de um livro infantil, e ainda se encontra no desafio de finalizar seu primeiro romance (o que é um dos motivos para este site existir).
+              Denis Espanhol é autor de contos, peças de teatro e de um livro infantil, e ainda se encontra no desafio de finalizar seu primeiro romance (o que é um dos motivos para este site existir).
             </p>
             <p>
               Pedagogo e artista, também está estudando desenvolvimento web, enquanto ministra aulas de robótica para o fundamental I, no Núcleo de Educação Integrada da Fundação Romi, em Santa Bárbara D'Oeste, onde reside.
