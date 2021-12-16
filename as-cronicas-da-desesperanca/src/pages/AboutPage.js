@@ -7,12 +7,12 @@ export default function AboutPage() {
   return (
     <section className='aboutBackground'>
       <Header />
-      <main className='toCentralizeReadingBox'>
-        <section className='readingBox'>
-          <section className='titleBox'>
-            <p className='sobreOProjeto'>ESCREVER SOBRE A DISTOPIA DO HOJE</p>
+      <main className='toCentralizeReadingAboutBox'>
+        <section className='readingAboutBox'>
+          <section className='titleAboutBox'>
+            <p className='aboutTitle'>ESCREVER SOBRE A DISTOPIA DO HOJE</p>
           </section>
-          <section className='textBox'>
+          <section className='textAboutBox'>
             <p>
               Faz um tempo que estou preso no desenvolvimento deste meu primeiro original. Muitas ideias germinaram, cresceram e murcharam. E quanto mais o tempo passava, mais perdido me sentia na escrita-jardinagem.
             </p>

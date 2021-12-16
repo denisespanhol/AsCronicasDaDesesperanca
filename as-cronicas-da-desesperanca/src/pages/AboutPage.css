@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
 
-.readingBox {
+.readingAboutBox {
   display: flex;
   justify-content: flex-start;
   flex-flow: column;
@@ -11,14 +11,14 @@
   border: 1px black solid;
 }
 
-.titleBox {
+.titleAboutBox {
   display: flex;
   justify-content: center;
   height: 4em;
   background-color: rgba(18, 17, 17, 1);
 }
 
-.textBox {
+.textAboutBox {
   display: flex;
   flex-direction: column;
   align-self: center;
@@ -27,7 +27,7 @@
   font-size: 14px;
 }
 
-.toCentralizeReadingBox {
+.toCentralizeReadingAboutBox {
   display: flex;
   justify-content: center;
   padding-top: 3em;
@@ -38,7 +38,7 @@
   background-image: url('../images/wallpaper1.png');
 }
 
-.sobreOProjeto {
+.aboutTitle {
   display: flex;
   font-family: 'Overpass Mono', cursive;
   font-size: 15px;
@@ -59,14 +59,14 @@
 
 /* para telas maiores */
 @media screen and (min-width: 768px) {
-  .titleBox {
+  .titleAboutBox {
     display: flex;
     justify-content: center;
     height: 4.5em;
     background-color: rgba(18, 17, 17, 1);
   }
 
-  .sobreOProjeto {
+  .aboutTitle {
     display: flex;
     font-family: 'Overpass Mono', cursive;
     font-size: 26px;
@@ -75,7 +75,7 @@
     width: 20.35em;
   }
 
-  .textBox {
+  .textAboutBox {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -87,7 +87,7 @@
   }
 }
 @media screen and (min-width: 1050px) {
-  .readingBox {
+  .readingAboutBox {
     display: flex;
     justify-content: flex-start;
     flex-flow: column;
@@ -98,14 +98,14 @@
     border: 2px black solid;
   }
   
-  .titleBox {
+  .titleAboutBox {
     display: flex;
     justify-content: center;
     height: 6em;
     background-color: rgba(18, 17, 17, 1);
   }
   
-  .textBox {
+  .textAboutBox {
     display: flex;
     flex-direction: column;
     align-self: center;
@@ -116,7 +116,7 @@
     letter-spacing: 1.5px;
   }
   
-  .toCentralizeReadingBox {
+  .toCentralizeReadingAboutBox {
     display: flex;
     justify-content: center;
     padding-top: 3em;
@@ -127,7 +127,7 @@
     background-image: url('../images/wallpaper1.png');
   }
   
-  .sobreOProjeto {
+  .aboutTitle {
     display: flex;
     font-family: 'Overpass Mono', cursive;
     font-size: 29px;
@@ -148,14 +148,14 @@
 }
 
 @media screen and (min-width: 1221px) {
-  .titleBox {
+  .titleAboutBox {
     display: flex;
     justify-content: center;
     height: 7em;
     background-color: rgba(18, 17, 17, 1);
   }
 
-  .sobreOProjeto {
+  .aboutTitle {
     display: flex;
     font-family: 'Overpass Mono', cursive;
     font-size: 36px;
