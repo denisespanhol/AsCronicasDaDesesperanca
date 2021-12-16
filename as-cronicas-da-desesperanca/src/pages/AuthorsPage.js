@@ -19,8 +19,8 @@ export default function AuthorsPage() {
               <section>
                 <p className='textDescription'><strong>Idade:</strong> 29.</p>
                 <p className='textDescription'><strong>Signo Solar:</strong> Câncer.</p>
-                <p className='textDescription'><strong>Gosta de:</strong> açaí com morango, RPG's, literatura fantástica, programação, chuvinha e batata doce.</p>
-                <p className='textDescription'><strong>Não gosta de:</strong> beterraba. :S</p>
+                <p className='textDescription'><strong>Gosta de:</strong> Açaí com morango, RPG's, literatura fantástica, programação, chuvinha e batata doce.</p>
+                <p className='textDescription'><strong>Não gosta de:</strong> Beterraba. :S</p>
               </section>
             </section>
             <p>
@@ -29,7 +29,7 @@ export default function AuthorsPage() {
             <p>
               Pedagogo e artista, também está estudando desenvolvimento web, enquanto ministra aulas de robótica para o fundamental I, no Núcleo de Educação Integrada da Fundação Romi, em Santa Bárbara D'Oeste, onde reside.
             </p>
-            <p>
+            <p className='toFinalSpace'>
               Acredita no poder da arte e da educação, mas principalmente na força de conseguir alcançar as pessoas através de sua escrita.
             </p>
           </section>
