@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className='toCentralizeFooter2 theFooter'>
       <p className='eODiaDeCaimFooter'>E o Dia de Caim | Livro I</p>
       <nav className='instaIcon'>
-        <img src={ solidInstagram } alt='instaIcon' width={ 35 } heigth={ 35 } />
+        <img src={ solidInstagram } alt='instaIcon' className='iconSize' />
       </nav>
       <p className='copyright'>Copyright © 2022 | Denis Espanhol</p>
     </footer>

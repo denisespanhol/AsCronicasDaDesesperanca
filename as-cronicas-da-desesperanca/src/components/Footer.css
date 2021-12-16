@@ -41,6 +41,11 @@
   margin-bottom: -1em;
 }
 
+.iconSize {
+  height: 30px;
+  width: 30px;
+}
+
 /* para telas maiores */
 @media screen and (min-width: 1050px) {
   .theFooter {
@@ -90,5 +95,10 @@
     align-items: center;
     margin-bottom: 9px;
     margin-left: 16px;
+  }
+
+  .iconSize {
+    height: 35px;
+    width: 35px;
   }
 }
