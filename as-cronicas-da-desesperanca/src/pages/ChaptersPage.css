@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass+Mono:wght@300;400;500;600;700&display=swap');
+
+.chapterBackground {
+  background-image: url('../images/wallpaper1.png');
+}
+
+.toCentralizeChapterBox{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.chapterNumber {
+  font-family: 'Overpass Mono', cursive;
+  font-size: 16px;
+  text-align: center;
+  align-self: center;
+  color: rgba(102, 40, 40, 1);
+  background-color: rgba(23, 22, 22, 1);
+  width: 75%;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.chapterTitle {
+  font-family: 'Overpass Mono', cursive;
+  font-size: 12.9px;
+  text-align: center;
+  align-self: center;
+  color: rgba(203, 192, 194, 1);
+  background-color: rgba(23, 22, 22, 1);
+  width: 75%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.chapterBox {
+  display: flex;
+  align-self: center;
+  width: 75%;
+  height: 20em;
+  margin-bottom: 2em;
+}
+
+.coverImage {
+  width: 16.86em;
+}
