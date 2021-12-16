@@ -46,3 +46,73 @@
   text-align: center;
   width: 250px;
 }
+
+.finalDate {
+  text-align: end;
+}
+
+.finalSignature {
+  text-align: end;
+  margin-bottom: -16px;
+  margin-top: 3em;
+}
+
+/* para telas maiores */
+@media screen and (min-width: 1050px) {
+  .readingBox {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    color: rgb(199, 190, 190);
+    height: 100%;
+    width: 60%;
+    background-color: rgba(23, 22, 22, 1);
+    border: 2px black solid;
+  }
+  
+  .titleBox {
+    display: flex;
+    justify-content: center;
+    height: 7em;
+    background-color: rgba(18, 17, 17, 1);
+  }
+  
+  .textBox {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: justify;
+    width: 80%;
+    font-size: 14px;
+  }
+  
+  .toCentralizeReadingBox {
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+    padding-bottom: 1.5em;
+  }
+  
+  .aboutBackground {
+    background-image: url('../images/wallpaper1.png');
+  }
+  
+  .sobreOProjeto {
+    display: flex;
+    font-family: 'Overpass Mono', cursive;
+    font-size: 40px;
+    color: rgb(94, 30, 30);
+    text-align: center;
+    width: 20.35em;
+  }
+
+  .finalDate {
+    text-align: end;
+  }
+  
+  .finalSignature {
+    text-align: end;
+    margin-bottom: -16px;
+    margin-top: 3em;
+  }
+}

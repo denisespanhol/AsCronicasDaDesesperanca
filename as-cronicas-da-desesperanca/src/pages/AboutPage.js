@@ -28,6 +28,12 @@ export default function AboutPage() {
             <p>
               Pretendo depositar metade do livro aqui, e espero que possamos trocar muito! Ansioso estou pela nossa troca! Muito obrigado! :)
             </p>
+            <p className='finalSignature'>
+              Denis Espanhol
+            </p>
+            <p className='finalDate'>
+              16 de dezembro de 2021
+            </p>
           </section>
         </section>
       </main>
