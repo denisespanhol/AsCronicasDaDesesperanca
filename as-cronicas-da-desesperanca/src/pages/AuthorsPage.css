@@ -34,25 +34,34 @@
   padding-bottom: 1.5em;
 }
 
-.aboutAuthorBackground {
+.authorBackground {
   background-image: url('../images/wallpaper1.png');
 }
 
-.aboutTitle {
+.authorTitle {
   display: flex;
   font-family: 'Overpass Mono', cursive;
-  font-size: 15px;
+  font-size: 20px;
   color: rgb(94, 30, 30);
   text-align: center;
-  width: 250px;
+  width: 161px;
 }
 
-.finalDate {
-  text-align: end;
+.authorPhoto{
+  height: 160px;
+  padding-top: 2em;
+  padding-bottom: 1em;
 }
 
-.finalSignature {
-  text-align: end;
-  margin-bottom: -16px;
-  margin-top: 3em;
+.authorBoxDescription {
+  display: flex;
+  flex-direction: row;
+}
+
+.textDescription {
+  padding-top: 3em;
+  padding-left: 1em;
+  font-size: 9px;
+  letter-spacing: 0px;
+  margin-bottom: -18px;
 }
