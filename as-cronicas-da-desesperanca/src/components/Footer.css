@@ -28,7 +28,7 @@
   padding-right: 3em;
 }
 
-.eODiaDeCaim {
+.eODiaDeCaimFooter {
   display: none;
 }
 
@@ -72,7 +72,7 @@
     margin-right: -30%;
   }
 
-  .eODiaDeCaim {
+  .eODiaDeCaimFooter {
     display: flex;
     font-family: 'Overpass Mono', cursive;
     background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));

@@ -6,7 +6,11 @@ export default function AboutPage() {
   return (
     <section>
       <Header />
-      <main>ABOUT</main>
+      <main>
+        <section>
+          About
+        </section>
+      </main>
       <Footer />
     </section>
   );

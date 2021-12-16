@@ -5,7 +5,7 @@ import './Footer.css';
 export default function Footer() {
   return (
     <footer className='toCentralizeFooter2 theFooter'>
-      <p className='eODiaDeCaim'>E o Dia de Caim | Livro I</p>
+      <p className='eODiaDeCaimFooter'>E o Dia de Caim | Livro I</p>
       <nav className='instaIcon'>
         <img src={ solidInstagram } alt='instaIcon' width={ 35 } heigth={ 35 } />
       </nav>
