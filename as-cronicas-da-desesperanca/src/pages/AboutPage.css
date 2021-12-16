@@ -58,6 +58,34 @@
 }
 
 /* para telas maiores */
+@media screen and (min-width: 768px) {
+  .titleBox {
+    display: flex;
+    justify-content: center;
+    height: 4.5em;
+    background-color: rgba(18, 17, 17, 1);
+  }
+
+  .sobreOProjeto {
+    display: flex;
+    font-family: 'Overpass Mono', cursive;
+    font-size: 26px;
+    color: rgb(94, 30, 30);
+    text-align: center;
+    width: 20.35em;
+  }
+
+  .textBox {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: justify;
+    width: 80%;
+    font-size: 15px;
+    padding-top: 2em;
+    letter-spacing: 1.5px;
+  }
+}
 @media screen and (min-width: 1050px) {
   .readingBox {
     display: flex;
@@ -73,7 +101,7 @@
   .titleBox {
     display: flex;
     justify-content: center;
-    height: 7em;
+    height: 6em;
     background-color: rgba(18, 17, 17, 1);
   }
   
@@ -102,7 +130,7 @@
   .sobreOProjeto {
     display: flex;
     font-family: 'Overpass Mono', cursive;
-    font-size: 36px;
+    font-size: 29px;
     color: rgb(94, 30, 30);
     text-align: center;
     width: 20.35em;
@@ -116,5 +144,23 @@
     text-align: end;
     margin-bottom: -16px;
     margin-top: 3em;
+  }
+}
+
+@media screen and (min-width: 1221px) {
+  .titleBox {
+    display: flex;
+    justify-content: center;
+    height: 7em;
+    background-color: rgba(18, 17, 17, 1);
+  }
+
+  .sobreOProjeto {
+    display: flex;
+    font-family: 'Overpass Mono', cursive;
+    font-size: 36px;
+    color: rgb(94, 30, 30);
+    text-align: center;
+    width: 20.35em;
   }
 }
