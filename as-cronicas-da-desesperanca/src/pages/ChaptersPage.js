@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import testImage from '../images/full-moon-4824456_1280.webp';
+import comingSoon from '../images/EM-BREVE.png';
 import './ChaptersPage.css';
 
 export default function ChaptersPage() {
@@ -20,13 +21,13 @@ export default function ChaptersPage() {
           <p className='chapterNumber'>CAPÍTULO I</p>
           <p className='chapterTitle'>Sr. Santos</p>
           <section className='chapterBox'>
-            <img src={ testImage } alt='teste' className='coverImage' />
+            <img src={ comingSoon } alt='teste' className='coverImage' />
           </section>
           <section className='toCentralizeChapterBox'>
           <p className='chapterNumber'>CAPÍTULO II</p>
           <p className='chapterTitle'>Ontem</p>
           <section className='chapterBox'>
-            <img src={ testImage } alt='teste' className='coverImage' />
+            <img src={ comingSoon } alt='teste' className='coverImage' />
           </section>
         </section>
         </section>
