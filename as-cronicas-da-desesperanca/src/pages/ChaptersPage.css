@@ -2,6 +2,9 @@
 
 .chapterBackground {
   background-image: url('../images/wallpaper1.png');
+  background-attachment: fixed;
+  width: 130em;
+  height: 50em;
 }
 
 .toCentralizeChapterBox{
@@ -70,7 +73,7 @@
     color: rgba(102, 40, 40, 1);
     background-color: rgba(23, 22, 22, 1);
     width: 14.85em;
-    margin-top: 5.66em;
+    margin-top: 6em;
     margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;
