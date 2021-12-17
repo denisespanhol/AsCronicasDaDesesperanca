@@ -14,7 +14,7 @@ export default function Header() {
     color: "whitesmoke",
   };
 
-  if (toFixed) {
+  if (toFixed && window.innerWidth > 1049) {
     theHeader = {
       backgroundColor: "rgba(18, 17, 17, 1)",
       color: "whitesmoke",

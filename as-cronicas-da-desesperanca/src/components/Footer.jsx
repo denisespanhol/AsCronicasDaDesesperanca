@@ -13,7 +13,7 @@ export default function Footer() {
     backgroundColor: "rgb(18, 17, 17, 1)",
   };
 
-  if (toFixed) {
+  if (toFixed && window.innerWidth > 1049) {
     theFooter = {
       display: "flex",
       justifyContent: "center",

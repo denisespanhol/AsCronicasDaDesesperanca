@@ -10,10 +10,6 @@
   justify-content: center;
 }
 
-.mainBox {
-  display: none;
-}
-
 .chapterNumber {
   font-family: 'Overpass Mono', cursive;
   font-size: 16px;
