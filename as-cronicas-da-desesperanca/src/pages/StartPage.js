@@ -1,8 +1,23 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import AppContext from '../context/AppContext';
 import { Link } from 'react-router-dom';
 import "./StartPage.css";
 
 export default function StartPage() {
+  const { setToFixed } = useContext(AppContext);
+
+  function handleChapterClick() {
+    setToFixed(true);
+  }
+
+  function handleAuthorClick() {
+    setToFixed(false);
+  }
+
+  function handleAboutClick() {
+    setToFixed(false);
+  }
+
   return (
     <main>
       <section className="toCentralizeTitle">
@@ -17,7 +32,7 @@ export default function StartPage() {
             <button
               type="button"
               className="designButtonPrincipal"
-              textDecoration="none"
+              onClick={ handleChapterClick }
             >
               IR PARA O SITE
             </button>
@@ -28,6 +43,7 @@ export default function StartPage() {
             <button
               type="button"
               className="designOthersButtons"
+              onClick={ handleAuthorClick }
             >
               SOBRE O AUTOR
             </button>
@@ -36,6 +52,7 @@ export default function StartPage() {
             <button
               type="button"
               className="designOthersButtons"
+              onClick={ handleAboutClick }
             >
               CONHEÇA O PROJETO
             </button>
