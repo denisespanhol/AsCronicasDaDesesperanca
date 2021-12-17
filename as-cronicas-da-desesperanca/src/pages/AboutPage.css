@@ -36,6 +36,7 @@
 
 .aboutBackground {
   background-image: url('../images/wallpaper1.png');
+  background-attachment: fixed;
 }
 
 .aboutTitle {

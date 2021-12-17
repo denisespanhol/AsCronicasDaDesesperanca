@@ -1,5 +1,4 @@
-import React, { useContext } from 'react';
-import AppContext from '../context/AppContext';
+import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import testImage from '../images/full-moon-4824456_1280.webp';
@@ -7,8 +6,6 @@ import comingSoon from '../images/EM-BREVE.png';
 import './ChaptersPage.css';
 
 export default function ChaptersPage() {
-  const { toFixed, setToFixed } = useContext(AppContext);
-
   return (
     <section className='chapterBackground'>
       <Header />

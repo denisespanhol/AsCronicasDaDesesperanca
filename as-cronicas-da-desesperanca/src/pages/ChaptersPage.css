@@ -3,8 +3,6 @@
 .chapterBackground {
   background-image: url('../images/wallpaper1.png');
   background-attachment: fixed;
-  width: 130em;
-  height: 50em;
 }
 
 .toCentralizeChapterBox{
@@ -52,6 +50,13 @@
 }
 
 @media screen and (min-width: 1050px) {
+  .chapterBackground {
+    background-image: url('../images/wallpaper1.png');
+    background-attachment: fixed;
+    width: 130em;
+    height: 50em;
+  }
+
   .toCentralizeChapterBox{
     display: flex;
     flex-flow: column;
