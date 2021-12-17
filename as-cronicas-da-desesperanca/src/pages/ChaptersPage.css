@@ -53,7 +53,7 @@
   .chapterBackground {
     background-image: url('../images/wallpaper1.png');
     background-attachment: fixed;
-    width: 130em;
+    width: 136em;
     height: 50em;
   }
 
@@ -100,7 +100,6 @@
     display: flex;
     align-self: center;
     width: 26em;
-
     margin-bottom: 2em;
   }
   
