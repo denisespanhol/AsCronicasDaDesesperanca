@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass+Mono:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.allChaptersBackground{
+  background-image: url('../../images/wallpaper1.png');
+  background-attachment: fixed;
+}
+
+.toCentralizeReadingAllChaptersBox {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+}
+
+.readingAllChaptersBox {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  color: rgb(199, 190, 190);
+  height: 100%;
+  width: 80%;
+  background-color: rgba(23, 22, 22, 1);
+  border: 1px black solid;
+}
+
+.titleAllChaptersBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 5.6em;
+  background-color: rgba(18, 17, 17, 1);
+}
+
+.allChaptersNumber {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Overpass Mono', cursive;
+  font-size: 22px;
+  color: rgb(94, 30, 30);
+  width: 250px;
+  margin-bottom: -6px;
+}
+
+.allChaptersTitle {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-family: 'Overpass Mono', cursive;
+  font-size: 13px;
+  background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  width: 250px;
+}
+
+.textAllChaptersBox {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: justify;
+  width: 80%;
+  font-size: 14px;
+  font-family: 'Ubuntu', cursive;
+  hyphens: auto;
+  line-height: 1.4em;
+  padding-top: 1em;
+}
+
+.endButtons {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.designEndButtons {
+  display: flex;
+  justify-content: center;
+  color: rgba(102, 40, 40, 1);
+  background-color: rgba(18, 17, 17, 1);
+  border: none;
+  padding: 10px 27px;
+  font-size: 16px;
+  border-radius: 50px;
+  margin-bottom: 1em;
+  height: 45px;
+  width: 204px;
+  font-family: 'Manuale', cursive;
+}

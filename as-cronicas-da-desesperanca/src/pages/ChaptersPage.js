@@ -15,6 +15,10 @@ export default function ChaptersPage() {
     setToFixed(true);
   }, [])
 
+  function handleChapterClick() {
+    setToFixed(false);
+  }
+
   return (
     <section className='chapterBackground'>
       <Header />
@@ -24,7 +28,7 @@ export default function ChaptersPage() {
           <p className='chapterTitle'>Uma Luz Verde Num Céu de Maio</p>
           <section className='chapterBox'>
             <Link to="/chapters/prologue">
-              <img src={ testImage } alt='teste' className='coverImage' />
+              <img src={ testImage } alt='teste' className='coverImage' onClick={ handleChapterClick } />
             </Link>
           </section>
         </section>
