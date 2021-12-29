@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import divisorImg from '../../images/divider-4715969.png';
 import './AllChapters.css';
 
 export default function Prologue() {
@@ -14,6 +15,7 @@ export default function Prologue() {
             <p className='allChaptersTitle'>Uma Luz Verde Num Céu de Maio</p>
           </section>
           <section className='textAllChaptersBox'>
+            <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
             <p>
               Uma criança corria desesperadamente pelas ruas de uma cidade brasileira. Em suas mãos haviam trezentos gramas de salsicha. Era fim de tarde. O laranja coloria o céu com tons de ingratidão, um quase dourado sinistro. Não parecia ser um bom dia para ninguém. Nem para a criança que fugia com um saquinho de salsichas roubadas do mercado, nem para os três seguranças que a perseguiam incansavelmente, como se o valor daquela carne barata fosse fazer diferença em suas vidas, tão baratas para o mercado quanto as salsichas roubadas.
             </p>
@@ -125,6 +127,7 @@ export default function Prologue() {
             <p>
               — A última esperança deste mundo quebrado: o Diabo. E hoje, estou particularmente interessado nos seus olhos. — O Diabo encarou o céu verde com muita paz de espírito. — Haverá uma grande festa neste mundo, sabia? E você, meu querido, está convidado!
             </p>
+            <img src={ divisorImg } alt='divisor' className='divisorImgBot' />
             <p className='theEnd'>FIM DO PRÓLOGO</p>
           </section>
         </section>
