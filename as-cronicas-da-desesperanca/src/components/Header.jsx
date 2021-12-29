@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import AppContext from '../context/AppContext';
 import solidFeather from '../images/feather-solid.svg';
 import solidBook from '../images/book-open-solid.svg';
@@ -7,7 +8,7 @@ import solidCat from '../images/cat-solid.svg';
 import './Header.css';
 
 export default function Header() {
-  const { toFixed } = useContext(AppContext);
+  const { toFixed, setToFixed } = useContext(AppContext);
 
   let theHeader = {
     backgroundColor: "rgba(18, 17, 17, 1)",
@@ -23,26 +24,47 @@ export default function Header() {
     }
   }
 
-  console.log(toFixed);
+  function handleChapterClick() {
+    setToFixed(false);
+  }
 
   return (
     <header style={theHeader}>
       <section className="toCentralizeTitleInHeader">
-        <p className="asCronicasDaHeader">AS CRÔNICAS DA</p>
-        <p className="desesperançaHeader">DESESPERANÇA</p>
+        <Link
+          to='/'
+          style={{ textDecoration: 'none' }}
+        >
+          <p className="asCronicasDaHeader">AS CRÔNICAS DA</p>
+          <p className="desesperançaHeader">DESESPERANÇA</p>
+        </Link>
       </section>
       <nav>
         <section className='divNav'>
           <img src={ solidBook } alt="writerIcon" width={ 30 } height={ 30 } className="icon"  />
-          <p className='navLinks'>CAPÍTULOS</p>
+          <Link to='/chapters' style={{ textDecoration: 'none' }}>
+            <p className='navLinks'>CAPÍTULOS</p>
+          </Link>
         </section>
         <section className='divNav'>
           <img src={ solidCat } alt="writerIcon" width={ 30 } height={ 30 } className="icon" />
-          <p className='navLinks'>SOBRE</p>
+          <Link
+            to='/about'
+            style={{ textDecoration: 'none' }}
+            onClick={ handleChapterClick }
+          >
+            <p className='navLinks'>SOBRE</p>
+          </Link>
         </section>
         <section className='divNav'>
           <img src={ solidFeather } alt="writerIcon" width={ 30 } height={ 30 } className="icon" />
-          <p className='navLinks'>AUTOR</p>
+          <Link
+            to='/author'
+            style={{ textDecoration: 'none' }}
+            onClick={ handleChapterClick }
+          >
+            <p className='navLinks'>AUTOR</p>
+          </Link>
         </section>
         <section className='divNav'>
           <img src={ solidComment } alt="writerIcon" width={ 30 } height={ 30 } className="icon" />
