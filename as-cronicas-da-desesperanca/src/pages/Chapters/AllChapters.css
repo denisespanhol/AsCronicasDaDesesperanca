@@ -69,6 +69,13 @@
   padding-top: 1em;
 }
 
+.theEnd {
+  align-self: center;
+  background: -webkit-linear-gradient(rgba(102, 40, 40, 1), rgba(102, 40, 40, 1), rgba(27, 26, 26, 1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .endButtons {
   display: flex;
   flex-direction: column;
@@ -90,4 +97,88 @@
   height: 45px;
   width: 204px;
   font-family: 'Manuale', cursive;
+}
+
+/* para telas maiores */
+@media screen and (min-width: 1050px) {
+  .titleAllChaptersBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 7.6em;
+    background-color: rgba(18, 17, 17, 1);
+  }
+
+  .allChaptersNumber {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Overpass Mono', cursive;
+    font-size: 36px;
+    color: rgb(94, 30, 30);
+    width: 250px;
+    margin-bottom: -6px;
+  }
+
+  .allChaptersTitle {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-family: 'Overpass Mono', cursive;
+    font-size: 21.6px;
+    background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    width: 400px;
+  }
+
+  .textAllChaptersBox {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: justify;
+    width: 80%;
+    font-size: 15px;
+    font-family: 'Ubuntu', cursive;
+    hyphens: auto;
+    line-height: 1.4em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+  
+  .theEnd {
+    align-self: center;
+    background: -webkit-linear-gradient(rgba(102, 40, 40, 1), rgba(102, 40, 40, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 26px;
+    padding-top: 0.5em;
+  }
+
+  .endButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .designEndButtons {
+    display: flex;
+    justify-content: center;
+    color: rgba(102, 40, 40, 1);
+    background-color: rgba(18, 17, 17, 1);
+    border: none;
+    padding: 10px 27px;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    height: 45px;
+    width: 204px;
+    font-family: 'Manuale', cursive;
+  }
 }

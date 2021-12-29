@@ -94,7 +94,70 @@ body {
     font-size: 12px;
     padding-top: 1em;
     padding-right: 0em;
-    margin-left: -25.5%;
+    margin-left: -25%;
+  }
+  
+  .instaIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 9px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 9px;
+  }
+
+  .iconSize {
+    height: 35px;
+    width: 35px;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  html {
+    height: 100%;
+    min-height: 100%;
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+
+  .theFooter {
+    margin-top: auto;
+    background-color: rgb(18, 17, 17, 1);
+  }
+  
+  .toCentralizeFooter2 {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+  }
+  
+  .copyright {
+    font-family: 'Overpass Mono', cursive;
+    background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 12px;
+    padding-left: 0em;
+    padding-top: 1em;
+    align-self:center;
+    margin-right: -30%;
+  }
+
+  .eODiaDeCaimFooter {
+    display: flex;
+    font-family: 'Overpass Mono', cursive;
+    background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 12px;
+    padding-top: 1em;
+    padding-right: 0em;
+    margin-left: -26.4%;
   }
   
   .instaIcon {

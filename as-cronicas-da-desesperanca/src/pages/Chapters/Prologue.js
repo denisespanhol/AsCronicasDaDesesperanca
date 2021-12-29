@@ -30,7 +30,7 @@ export default function Prologue() {
               — O fedelho já comeu tudo. Vamos embora. — Argumentou Rogério, torcendo para que bastasse.
             </p>
             <p>
-              — Vai se foder, Rogério! Olha só aonde esse merdinha fez a gente vir! — Mário, o mais alto dos três, sentia o corpo todo esquentar. Desde sempre teve problemas em controlar sua ira, e gostava se aproveitar situações em pudesse colocar tudo para fora de uma vez — E, aliás, porque o desgraçadinho parou de correr? Tá achando que comer as salsichas vai te livrar de uma sova? Sabe o que o chefe vai falar para a gente? “Três marmanjos não dão conta de um ladrãozinho?”.
+              — Vai se foder, Rogério! Olha só aonde esse merdinha fez a gente vir! — Mário, o mais alto dos três, sentia o corpo todo esquentar. Desde sempre teve problemas em controlar sua ira, qualquer problema o fazia parecer uma panela de pressão prestes a explodir — E, aliás, porque o desgraçadinho parou de correr? Tá achando que comer as salsichas vai te livrar de uma sova? Sabe o que o chefe vai falar para a gente? “Três marmanjos não dão conta de um ladrãozinho?”.
             </p>
             <p>
               — Qualé, Mário. Eu pago esse saquinho de salsicha, to falando isso desde o começo. Vamos voltar, já deu! — Disse Rogério, com o mesmo pressentimento das estrelas que não eram vistas no céu.
@@ -125,6 +125,7 @@ export default function Prologue() {
             <p>
               — A última esperança deste mundo quebrado: o Diabo. E hoje, estou particularmente interessado nos seus olhos. — O Diabo encarou o céu verde com muita paz de espírito. — Haverá uma grande festa neste mundo, sabia? E você, meu querido, está convidado!
             </p>
+            <p className='theEnd'>FIM DO PRÓLOGO</p>
           </section>
         </section>
       </main>
