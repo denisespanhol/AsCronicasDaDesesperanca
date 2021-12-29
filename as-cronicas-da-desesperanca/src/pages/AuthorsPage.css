@@ -228,7 +228,7 @@
     align-self: center;
     text-align: justify;
     width: 80%;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .authorPhoto{
@@ -238,9 +238,9 @@
   }
 
   .textDescription {
-    padding-top: 3em;
+    padding-top: 3.5em;
     padding-left: 3em;
-    font-size: 17px;
+    font-size: 14px;
     letter-spacing: 1px;
     margin-bottom: 16px;
     margin-top: -0px;
