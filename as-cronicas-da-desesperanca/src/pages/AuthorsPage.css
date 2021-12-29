@@ -211,8 +211,10 @@
   }
 
   .divisorImgTopAuthorsPage {
-    margin-top: -6em;
-    margin-bottom: -7.6em;
+    margin-top: -5em;
+    width: 36em;
+    margin-bottom: -6.6em;
+    align-self: center;
   }
 
   .titleAuthorBox {
