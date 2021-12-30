@@ -3,7 +3,7 @@ import AppContext from '../context/AppContext';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
-import testImage from '../images/full-moon-4824456_1280.webp';
+import prologueCover from '../images/prologueCover.jpg';
 import comingSoon from '../images/EM-BREVE.png';
 import './ChaptersPage.css';
 
@@ -28,7 +28,7 @@ export default function ChaptersPage() {
           <p className='chapterTitle'>Uma Luz Verde Num Céu de Maio</p>
           <section className='chapterBox'>
             <Link to="/chapters/prologue">
-              <img src={ testImage } alt='teste' className='coverImage' onClick={ handleChapterClick } />
+              <img src={ prologueCover } alt='teste' className='coverImage' onClick={ handleChapterClick } />
             </Link>
           </section>
         </section>
