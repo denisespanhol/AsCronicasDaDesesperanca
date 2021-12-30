@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Manuale:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Overpass+Mono:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+label {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 26px;
+  margin-bottom: 10px;
+}
+
+input, select {
+  height: 16px;
+  margin-left: 17.6px;
+}
+
+.feedbackBackground {
+  background-image: url('../images/wallpaper1.png');
+  background-attachment: fixed;
+}
+
+.toCentralizeReadingFeedbackBox {
+  display: flex;
+  justify-content: center;
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+}
+
+.readingFeedbackBox {
+  display: flex;
+  justify-content: flex-start;
+  flex-flow: column;
+  color: rgb(199, 190, 190);
+  height: 100%;
+  width: 80%;
+  background-color: rgba(23, 22, 22, 1);
+  border: 1px black solid;
+}
+
+.titleFeedbackBox {
+  display: flex;
+  justify-content: center;
+  height: 4em;
+  background-color: rgba(18, 17, 17, 1);
+}
+
+.feedbackTitle {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  font-family: 'Overpass Mono', cursive;
+  font-size: 15px;
+  color: rgb(94, 30, 30);
+  text-align: center;
+  width: 250px;
+}
+
+.textFeedbackBox {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: left;
+  width: 80%;
+  font-size: 14px;
+  font-family: 'Ubuntu', cursive;
+  line-height: 2em;
+  padding-top: 1em;
+}
