@@ -7,6 +7,7 @@ label {
   text-align: left;
   line-height: 26px;
   margin-bottom: 10px;
+  font-family: 'Ubuntu', cursive;
 }
 
 input, select {
@@ -43,6 +44,7 @@ textarea {
   width: 80%;
   background-color: rgba(23, 22, 22, 1);
   border: 1px black solid;
+  font-family: 'Ubuntu', cursive;
 }
 
 .titleFeedbackBox {
@@ -89,4 +91,52 @@ textarea {
   height: 45px;
   width: 204px;
   font-family: 'Manuale', cursive;
+}
+
+@media screen and (min-width: 750px) {
+  label {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 26px;
+    margin-bottom: 10px;
+  }
+
+  input, select {
+    align-self: center;
+    height: 26px;
+    margin-left: 17.6px;
+    width: 350px;
+  }
+  
+  textarea {
+    width: 350px;
+    height: 50px;
+    margin-left: 16px;
+  }
+
+  .feedbackTitle {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-family: 'Overpass Mono', cursive;
+    font-size: 25px;
+    color: rgb(94, 30, 30);
+    text-align: center;
+    width: 350px;
+    margin-bottom: 16px;
+  }
+
+  .textFeedbackBox {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: left;
+    width: 80%;
+    font-size: 17px;
+    font-family: 'Ubuntu', cursive;
+    line-height: 2em;
+    padding-top: 1em;
+  }
 }
