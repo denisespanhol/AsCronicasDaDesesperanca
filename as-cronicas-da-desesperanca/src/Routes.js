@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import StartPage from "./pages/StartPage";
 import ChaptersPage from "./pages/ChaptersPage";
 import AuthorsPage from "./pages/AuthorsPage";
@@ -9,13 +9,13 @@ import Feedback from "./pages/Feedback";
 
 export default function Routes() {
   return (
-    <Switch>
-      <Route exact path="/" component={ StartPage } />
+    <Routes>
+      <Route exact path="/" component={ <StartPage/> } />
       <Route exact path="/chapters/prologue" component={ Prologue } />
-      <Route path="/chapters" component={ ChaptersPage } />
-      <Route path="/author" component={ AuthorsPage } />
-      <Route path="/about" component={ AboutPage } />
-      <Route path="/feedback" component={ Feedback } />
-    </Switch>
+      <Route path="/chapters" component={ <ChaptersPage/> } />
+      <Route path="/author" component={ <AuthorsPage/> } />
+      <Route path="/about" component={ <AboutPage/> } />
+      <Route path="/feedback" component={ <Feedback/> } />
+    </Routes>
   );
 }
