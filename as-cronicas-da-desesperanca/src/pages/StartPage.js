@@ -6,10 +6,6 @@ import "./StartPage.css";
 export default function StartPage() {
   const { setToFixed } = useContext(AppContext);
 
-  function handleChapterClick() {
-    setToFixed(true);
-  }
-
   function handleAuthorClick() {
     setToFixed(false);
   }
@@ -28,11 +24,10 @@ export default function StartPage() {
       </section>
       <footer className="startFooter toCentralizeFooter">
         <section className="toCentralizeButtonPrincipal">
-          <Link to="/Chapters" style={{ textDecoration: 'none' }}>
+          <Link to="/chapters" style={{ textDecoration: 'none' }}>
             <button
               type="button"
               className="designButtonPrincipal"
-              onClick={ handleChapterClick }
             >
               IR PARA O SITE
             </button>

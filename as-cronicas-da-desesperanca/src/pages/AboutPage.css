@@ -25,6 +25,10 @@
   text-align: justify;
   width: 80%;
   font-size: 14px;
+  font-family: 'Ubuntu', cursive;
+  hyphens: auto;
+  line-height: 1.4em;
+  padding-top: 1em;
 }
 
 .toCentralizeReadingAboutBox {
@@ -36,6 +40,7 @@
 
 .aboutBackground {
   background-image: url('../images/wallpaper1.png');
+  background-attachment: fixed;
 }
 
 .aboutTitle {
@@ -111,7 +116,7 @@
     align-self: center;
     text-align: justify;
     width: 80%;
-    font-size: 18px;
+    font-size: 14px;
     padding-top: 2em;
     letter-spacing: 1.5px;
   }
@@ -151,14 +156,14 @@
   .titleAboutBox {
     display: flex;
     justify-content: center;
-    height: 7em;
+    height: 6em;
     background-color: rgba(18, 17, 17, 1);
   }
 
   .aboutTitle {
     display: flex;
     font-family: 'Overpass Mono', cursive;
-    font-size: 36px;
+    font-size: 33px;
     color: rgb(94, 30, 30);
     text-align: center;
     width: 20.35em;

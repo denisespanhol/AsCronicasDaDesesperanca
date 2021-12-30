@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import divisorImg from '../images/divider-4715969.png';
 import './AboutPage.css';
 
 export default function AboutPage() {
@@ -13,6 +14,7 @@ export default function AboutPage() {
             <p className='aboutTitle'>ESCREVER SOBRE A DISTOPIA DO HOJE</p>
           </section>
           <section className='textAboutBox'>
+            <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
             <p>
               Faz um tempo que estou preso no desenvolvimento deste meu primeiro original. Muitas ideias germinaram, cresceram e murcharam. E quanto mais o tempo passava, mais perdido me sentia na escrita-jardinagem.
             </p>
@@ -28,6 +30,7 @@ export default function AboutPage() {
             <p>
               Pretendo depositar metade do livro aqui, e espero que possamos trocar muito! Ansioso estou pela nossa troca! Muito obrigado! :)
             </p>
+            <img src={ divisorImg } alt='divisor' className='divisorImgBot' />
             <p className='finalSignature'>
               Denis Espanhol
             </p>

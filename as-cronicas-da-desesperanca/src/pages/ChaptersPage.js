@@ -1,13 +1,23 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import AppContext from '../context/AppContext';
+import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import testImage from '../images/full-moon-4824456_1280.webp';
 import comingSoon from '../images/EM-BREVE.png';
 import './ChaptersPage.css';
 
+
 export default function ChaptersPage() {
-  const { toFixed, setToFixed } = useContext(AppContext);
+  const { setToFixed } = useContext(AppContext)
+
+  useEffect(() => {
+    setToFixed(true);
+  }, [])
+
+  function handleChapterClick() {
+    setToFixed(false);
+  }
 
   return (
     <section className='chapterBackground'>
@@ -17,7 +27,9 @@ export default function ChaptersPage() {
           <p className='chapterNumber'>PRÓLOGO</p>
           <p className='chapterTitle'>Uma Luz Verde Num Céu de Maio</p>
           <section className='chapterBox'>
-            <img src={ testImage } alt='teste' className='coverImage' />
+            <Link to="/chapters/prologue">
+              <img src={ testImage } alt='teste' className='coverImage' onClick={ handleChapterClick } />
+            </Link>
           </section>
         </section>
         <section className='toCentralizeChapterBox'>
