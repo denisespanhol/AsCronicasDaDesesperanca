@@ -13,6 +13,12 @@ input, select {
   margin-left: 17.6px;
 }
 
+textarea {
+  width: 200px;
+  height: 50px;
+  margin-left: 16px;
+}
+
 .feedbackBackground {
   background-image: url('../images/wallpaper1.png');
   background-attachment: fixed;
@@ -64,4 +70,20 @@ input, select {
   font-family: 'Ubuntu', cursive;
   line-height: 2em;
   padding-top: 1em;
+}
+
+.designFeedbackButtons {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  color: rgba(102, 40, 40, 1);
+  background-color: rgba(18, 17, 17, 1);
+  border: none;
+  padding: 10px 27px;
+  font-size: 16px;
+  border-radius: 50px;
+  margin-bottom: 1em;
+  height: 45px;
+  width: 204px;
+  font-family: 'Manuale', cursive;
 }

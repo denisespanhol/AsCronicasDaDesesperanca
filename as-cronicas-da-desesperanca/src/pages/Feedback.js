@@ -37,10 +37,45 @@ export default function Feedback() {
                 id='chapter'
                 placeholder='Selecione o capítulo'
               >
+                <option disabled selected>Selecione o capítulo</option>
                 <option>Prólogo</option>
                 <option>Capítulo I</option>
               </select>
             </label>
+            <label htmlFor='toLike'>
+              4 - Me fala o que curtiu!
+              <textarea
+                id='toLike'
+                cols='50'
+                rows='5'
+                placeholder='Agradeço desde já!'
+              />
+            </label>
+            <label htmlFor='toLike'>
+              5 - E o que não curtiu!
+              <textarea
+                id='toLike'
+                cols='50'
+                rows='5'
+                placeholder='Agradeço desde já!'
+              />
+            </label>
+            <label htmlFor='toLike'>
+              6 - Algum erro de português?
+              <textarea
+                id='toLike'
+                cols='50'
+                rows='5'
+                placeholder='Agradeço desde já!'
+              />
+            </label>
+            <img src={ divisorImg } alt='divisor' className='divisorImgBot' />
+            <button
+              type='button'
+              className='designFeedbackButtons'
+            >
+              Enviar!
+            </button>
           </form>
         </section>
       </main>
