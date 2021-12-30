@@ -68,7 +68,13 @@ export default function Header() {
         </section>
         <section className='divNav'>
           <img src={ solidComment } alt="writerIcon" width={ 30 } height={ 30 } className="icon" />
-          <p className='navLinks'>FEEDBACK</p>
+          <Link
+            to='/feedback'
+            style={{ textDecoration: 'none' }}
+            onClick={ handleChapterClick }
+          >
+            <p className='navLinks'>FEEDBACK</p>
+          </Link>
         </section>
       </nav>
     </header>

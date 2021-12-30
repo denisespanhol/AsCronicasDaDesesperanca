@@ -5,6 +5,7 @@ import ChaptersPage from "./pages/ChaptersPage";
 import AuthorsPage from "./pages/AuthorsPage";
 import AboutPage from "./pages/AboutPage";
 import Prologue from "./pages/Chapters/Prologue";
+import Feedback from "./pages/Feedback";
 
 export default function Routes() {
   return (
@@ -14,6 +15,7 @@ export default function Routes() {
       <Route path="/chapters" component={ ChaptersPage } />
       <Route path="/author" component={ AuthorsPage } />
       <Route path="/about" component={ AboutPage } />
+      <Route path="/feedback" component={ Feedback } />
     </Switch>
   );
 }

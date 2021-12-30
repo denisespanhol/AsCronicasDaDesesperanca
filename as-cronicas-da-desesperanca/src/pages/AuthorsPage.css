@@ -142,7 +142,7 @@
   .authorTitle {
     display: flex;
     font-family: 'Overpass Mono', cursive;
-    font-size: 40px;
+    font-size: 33px;
     color: rgb(94, 30, 30);
     text-align: center;
     width: 321px;
@@ -202,8 +202,9 @@
 
   .authorTitle {
     display: flex;
+    justify-content: center;
     font-family: 'Overpass Mono', cursive;
-    font-size: 40px;
+    font-size: 33px;
     color: rgb(94, 30, 30);
     text-align: center;
     width: 321px;
@@ -211,8 +212,8 @@
   }
 
   .divisorImgTopAuthorsPage {
-    margin-top: -5em;
-    width: 36em;
+    margin-top: -6em;
+    width: 33em;
     margin-bottom: -6.6em;
     align-self: center;
   }
