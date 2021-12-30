@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import divisorImg from '../../images/divider-4715969.png';
@@ -133,12 +134,14 @@ export default function Prologue() {
         </section>
       </main>
       <section className='endButtons'>
-        <button
-          type='button'
-          className='designEndButtons'
-        >
-          Dê seu Feedback!
-        </button>
+        <Link to='/feedback' style={{ textDecoration: 'none' }}>
+          <button
+            type='button'
+            className='designEndButtons'
+          >
+            Dê seu Feedback!
+          </button>
+        </Link>
         <button
           type='button'
           className='designEndButtons'
