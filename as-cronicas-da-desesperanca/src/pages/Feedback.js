@@ -5,6 +5,10 @@ import divisorImg from '../images/divider-4715969.png';
 import './Feedback.css';
 
 export default function Feedback() {
+  function thanks() {
+    window.alert('Feedback enviado! Muito obrigado!');
+  }
+
   return (
     <section className='feedbackBackground'>
       <Header />
@@ -80,6 +84,7 @@ export default function Feedback() {
             <button
               type='submit'
               className='designFeedbackButtons'
+              onClick={ thanks }
             >
               Enviar!
             </button>
