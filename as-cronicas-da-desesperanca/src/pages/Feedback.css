@@ -140,3 +140,70 @@ textarea {
     padding-top: 1em;
   }
 }
+
+@media screen and (min-width: 1050px) {
+  label {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    line-height: 46px;
+    margin-bottom: 10px;
+  }
+
+  input, select {
+    align-self: center;
+    height: 26px;
+    margin-left: 17.6px;
+    width: 350px;
+  }
+  
+  textarea {
+    width: 350px;
+    height: 50px;
+    margin-left: 16px;
+  }
+
+  .readingFeedbackBox {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    color: rgb(199, 190, 190);
+    height: 100%;
+    width: 60%;
+    background-color: rgba(23, 22, 22, 1);
+    border: 1px black solid;
+    font-family: 'Ubuntu', cursive;
+  }
+
+  .titleFeedbackBox {
+    display: flex;
+    justify-content: center;
+    height: 6em;
+    background-color: rgba(18, 17, 17, 1);
+  }
+
+  .feedbackTitle {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    font-family: 'Overpass Mono', cursive;
+    font-size: 33px;
+    color: rgb(94, 30, 30);
+    text-align: center;
+    width: 450px;
+    margin-bottom: 16px;
+  }
+
+  .textFeedbackBox {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: left;
+    width: 80%;
+    font-size: 14px;
+    font-family: 'Ubuntu', cursive;
+    line-height: 2em;
+    padding-top: 1em;
+  }
+}
