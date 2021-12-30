@@ -7,7 +7,7 @@ import AboutPage from "./pages/AboutPage";
 import Prologue from "./pages/Chapters/Prologue";
 import Feedback from "./pages/Feedback";
 
-export default function Routes() {
+export default function toRoutes() {
   return (
     <Routes>
       <Route exact path="/" component={ <StartPage/> } />

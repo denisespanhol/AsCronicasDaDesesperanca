@@ -1,12 +1,12 @@
 import React from 'react';
 import Provider from './context/Provider';
-import Routes from './Routes';
+import toRoutes from './toRoutes';
 import './App.css';
 
 function App() {
   return (
     <Provider>
-      <Routes />
+      <toRoutes />
     </Provider>
   );
 }
