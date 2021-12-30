@@ -7,7 +7,7 @@ label {
   text-align: left;
   line-height: 26px;
   margin-bottom: 10px;
-  font-family: 'Ubuntu', cursive;
+  font-family: 'Ubuntu', arial;
 }
 
 input, select {
@@ -44,7 +44,7 @@ textarea {
   width: 80%;
   background-color: rgba(23, 22, 22, 1);
   border: 1px black solid;
-  font-family: 'Ubuntu', cursive;
+  font-family: 'Ubuntu', arial;
 }
 
 .titleFeedbackBox {
@@ -58,7 +58,7 @@ textarea {
   display: flex;
   align-self: center;
   justify-content: center;
-  font-family: 'Overpass Mono', cursive;
+  font-family: 'Overpass Mono', arial;
   font-size: 15px;
   color: rgb(94, 30, 30);
   text-align: center;
@@ -72,7 +72,7 @@ textarea {
   text-align: left;
   width: 80%;
   font-size: 14px;
-  font-family: 'Ubuntu', cursive;
+  font-family: 'Ubuntu', arial;
   line-height: 2em;
   padding-top: 1em;
 }
@@ -90,7 +90,7 @@ textarea {
   margin-bottom: 1em;
   height: 45px;
   width: 204px;
-  font-family: 'Manuale', cursive;
+  font-family: 'Manuale', arial;
 }
 
 @media screen and (min-width: 750px) {
@@ -120,7 +120,7 @@ textarea {
     display: flex;
     align-self: center;
     justify-content: center;
-    font-family: 'Overpass Mono', cursive;
+    font-family: 'Overpass Mono', arial;
     font-size: 25px;
     color: rgb(94, 30, 30);
     text-align: center;
@@ -135,7 +135,7 @@ textarea {
     text-align: left;
     width: 80%;
     font-size: 17px;
-    font-family: 'Ubuntu', cursive;
+    font-family: 'Ubuntu', arial;
     line-height: 2em;
     padding-top: 1em;
   }
@@ -173,7 +173,7 @@ textarea {
     width: 60%;
     background-color: rgba(23, 22, 22, 1);
     border: 1px black solid;
-    font-family: 'Ubuntu', cursive;
+    font-family: 'Ubuntu', arial;
   }
 
   .titleFeedbackBox {
@@ -187,7 +187,7 @@ textarea {
     display: flex;
     align-self: center;
     justify-content: center;
-    font-family: 'Overpass Mono', cursive;
+    font-family: 'Overpass Mono', arial;
     font-size: 33px;
     color: rgb(94, 30, 30);
     text-align: center;
@@ -202,7 +202,7 @@ textarea {
     text-align: left;
     width: 80%;
     font-size: 14px;
-    font-family: 'Ubuntu', cursive;
+    font-family: 'Ubuntu', arial;
     line-height: 2em;
     padding-top: 1em;
   }
