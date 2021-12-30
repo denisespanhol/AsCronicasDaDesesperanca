@@ -51,19 +51,19 @@ export default function Feedback() {
                 placeholder='Agradeço desde já!'
               />
             </label>
-            <label htmlFor='toLike'>
+            <label htmlFor='toNotLike'>
               5 - E o que não curtiu!
               <textarea
-                id='toLike'
+                id='toNotLike'
                 cols='50'
                 rows='5'
                 placeholder='Agradeço desde já!'
               />
             </label>
-            <label htmlFor='toLike'>
+            <label htmlFor='portuguese'>
               6 - Algum erro de português?
               <textarea
-                id='toLike'
+                id='portuguese'
                 cols='50'
                 rows='5'
                 placeholder='Agradeço desde já!'
