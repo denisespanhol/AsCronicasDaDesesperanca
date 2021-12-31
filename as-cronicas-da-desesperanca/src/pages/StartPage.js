@@ -1,10 +1,14 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import AppContext from '../context/AppContext';
 import { Link } from 'react-router-dom';
 import "./StartPage.css";
 
 export default function StartPage() {
   const { setToFixed } = useContext(AppContext);
+
+  useEffect(() => {
+    document.title = 'As Crônicas da Desesperança'
+  }, [])
 
   function handleAuthorClick() {
     setToFixed(false);
