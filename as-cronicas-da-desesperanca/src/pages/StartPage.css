@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 13rem;
+  margin-top: 50%;
 }
 
 .desesperança {
@@ -49,6 +49,7 @@ body {
   margin-left: 21.15em;
   margin-top: 0em;
   font-size: 12px;
+  padding-bottom: 40%;
 }
 
 .toCentralizeFooter {
@@ -80,7 +81,6 @@ body {
   margin-top: 1rem;
   padding: 1rem;
   background-color: rgba(23, 22, 22, 1);
-  position: fixed;
   bottom: 3em;
   left: 0;
   width: 100%;
@@ -124,6 +124,78 @@ button:hover {
   cursor: pointer;
 }
 
+/* para telas de celulares bastante estreitas */
+@media screen and (max-width: 334px)  {
+  .desesperança {
+    font-family: 'Overpass Mono', Arial, Helvetica, sans-serif;
+    font-size: 33px;
+    background: -webkit-linear-gradient(rgba(102, 40, 40, 1), rgba(102, 40, 40, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: -6px;
+    margin-bottom: -6px;
+  }
+  
+  .asCronicasDa {
+    background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 11.2em;
+    margin-bottom: 0em;
+    font-size: 13px;
+  }
+  
+  .eODiaDeCaim {
+    background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 11.36em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    font-size: 13px;
+  }
+
+  .livroI {
+    background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 20.8em;
+    margin-top: 0em;
+    font-size: 10px;
+    padding-bottom: 40%;
+  }
+
+  .designButtonPrincipal {
+    display: flex;
+    justify-content: center;
+    color: rgba(102, 40, 40, 1);
+    background-color: rgba(18, 17, 17, 1);
+    border: none;
+    padding: 10px 27px;
+    font-size: 13px;
+    border-radius: 50px;
+    margin: 2px;
+    height: 35px;
+    width: 154px;
+    font-family: 'Manuale', Arial, Helvetica, sans-serif;
+  }
+  
+  .designOthersButtons {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(18, 17, 17, 1);
+    color: rgba(102, 40, 40, 1);
+    border: none;
+    padding: 10px 10px;
+    font-size: 11px;
+    border-radius: 50px;
+    margin: 2px;
+    height: 35px;
+    width: 125px;
+    font-family: 'Manuale', Arial, Helvetica, sans-serif;
+  }
+}
+
 /* Para telas maiores */
 @media screen and (min-width: 768px) {
   body {
@@ -136,7 +208,7 @@ button:hover {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    margin-top: 13rem;
+    margin-top: 12%;
   }
   
   .desesperança {
@@ -175,6 +247,7 @@ button:hover {
     margin-left: 40.5em;
     margin-top: 0em;
     font-size: 15px;
+    padding-bottom: 6%;
   }
   
   .toCentralizeFooter {
