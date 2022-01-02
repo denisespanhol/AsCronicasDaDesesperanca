@@ -19,7 +19,7 @@ export default function Feedback() {
           </section>
           <form className='textFeedbackBox' action='https://api.staticforms.xyz/submit' method='post'>
             <input type="hidden" name="accessKey" value="dc2bd44b-3e15-4b72-a236-a113a0b8b91b" />
-            <input type="hidden" name="redirectTo" value="https://ascronicasdadesesperanca.com.br/feedback"></input>
+            <input type="hidden" name="redirectTo" value="http://ascronicasdadesesperanca.com.br/feedback"></input>
             <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
             <label htmlFor='name'>
               1 - Nome ou apelido
