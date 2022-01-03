@@ -17,9 +17,7 @@ export default function Feedback() {
           <section className='titleFeedbackBox'>
             <p className='feedbackTitle'>ME CONTA O QUE ACHOU!</p>
           </section>
-          <form className='textFeedbackBox' action='https://api.staticforms.xyz/submit' method='post'>
-            <input type="hidden" name="accessKey" value="dc2bd44b-3e15-4b72-a236-a113a0b8b91b" />
-            <input type="hidden" name="redirectTo" value="http://www.ascronicasdadesesperanca.com.br/feedback"></input>
+          <form className='textFeedbackBox' action='mailto:denisgfespanhol@gmail.com' method='post'>
             <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
             <label htmlFor='name'>
               1 - Nome ou apelido
