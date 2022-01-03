@@ -15,12 +15,14 @@ input, select {
   height: 16px;
   margin-left: 17.6px;
   width: 200px;
+  border-radius: 10px;
 }
 
 textarea {
   width: 200px;
   height: 50px;
   margin-left: 16px;
+  border-radius: 10px;
 }
 
 .feedbackBackground {
@@ -81,8 +83,8 @@ textarea {
   display: flex;
   justify-content: center;
   align-self: center;
-  color: rgba(102, 40, 40, 1);
-  background-color: rgba(18, 17, 17, 1);
+  color: black;
+  background-color: rgb(66, 63, 63);
   border: none;
   padding: 10px 27px;
   font-size: 16px;
@@ -91,6 +93,12 @@ textarea {
   height: 45px;
   width: 204px;
   font-family: 'Manuale', arial;
+}
+
+.designFeedbackButtons:hover {
+  background-color: rgb(66, 63, 63);
+  color: black;
+  cursor: default;
 }
 
 @media screen and (min-width: 750px) {

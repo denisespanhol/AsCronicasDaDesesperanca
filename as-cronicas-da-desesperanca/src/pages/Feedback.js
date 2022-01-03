@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import AppContext from '../context/AppContext';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import divisorImg from '../images/divider-4715969.png';
 import './Feedback.css';
 
 export default function Feedback() {
+  const { disableSubmit } = useContext(AppContext);
+
   function thanks() {
     window.alert('Feedback enviado! Muito obrigado!');
   }
@@ -83,6 +86,7 @@ export default function Feedback() {
               type='submit'
               className='designFeedbackButtons'
               onClick={ thanks }
+              disabled={ disableSubmit }
             >
               Enviar!
             </button>
