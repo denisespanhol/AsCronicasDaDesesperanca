@@ -83,8 +83,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-self: center;
-  color: black;
-  background-color: rgb(66, 63, 63);
   border: none;
   padding: 10px 27px;
   font-size: 16px;
@@ -95,10 +93,21 @@ textarea {
   font-family: 'Manuale', arial;
 }
 
-.designFeedbackButtons:hover {
+.designFeedbackButtons:disabled {
   background-color: rgb(66, 63, 63);
   color: black;
   cursor: default;
+}
+
+.designFeedbackButtons:enabled {
+  background-color: rgba(18, 17, 17, 1);
+  color: rgba(102, 40, 40, 1);
+  cursor: pointer;
+}
+
+.designFeedbackButtons:enabled:hover {
+  background-color: rgba(102, 40, 40, 1);
+  color: rgba(18, 17, 17, 1);
 }
 
 @media screen and (min-width: 750px) {

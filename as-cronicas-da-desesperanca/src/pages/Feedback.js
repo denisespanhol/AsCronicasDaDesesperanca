@@ -6,10 +6,22 @@ import divisorImg from '../images/divider-4715969.png';
 import './Feedback.css';
 
 export default function Feedback() {
-  const { disableSubmit } = useContext(AppContext);
+  const { disableSubmit, setDisableSubmit,
+    nameValue, setNameValue } = useContext(AppContext);
 
   function thanks() {
     window.alert('Feedback enviado! Muito obrigado!');
+  }
+
+  function handleChange({ target: { value }}) {
+    setNameValue(value);
+
+    if (nameValue.length > 2) {
+      setDisableSubmit(false);
+    }
+    if (nameValue.length <= 2) {
+      setDisableSubmit(true);
+    }
   }
 
   return (
@@ -29,6 +41,8 @@ export default function Feedback() {
                 name='name'
                 type='text'
                 placeholder='Insira como deseja se identificar'
+                onChange={ handleChange }
+                value={ nameValue }
               />
             </label>
             <label htmlFor='email'>
