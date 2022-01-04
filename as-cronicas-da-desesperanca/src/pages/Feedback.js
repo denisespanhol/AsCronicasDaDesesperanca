@@ -7,19 +7,22 @@ import './Feedback.css';
 
 export default function Feedback() {
   const { disableSubmit, setDisableSubmit,
-    nameValue, setNameValue } = useContext(AppContext);
+    inputsValues, setInputsValues } = useContext(AppContext);
 
   function thanks() {
     window.alert('Feedback enviado! Muito obrigado!');
   }
 
-  function handleChange({ target: { value }}) {
-    setNameValue(value);
+  function handleChangeName({ target: { value, name }}) {
+    setInputsValues((inputsValues) => ({
+      ...inputsValues,
+      [name]: value
+    }));
 
-    if (nameValue.length > 2) {
+    if (inputsValues.name.length > 2) {
       setDisableSubmit(false);
     }
-    if (nameValue.length <= 2) {
+    if (inputsValues.name.length <= 2) {
       setDisableSubmit(true);
     }
   }
@@ -41,8 +44,7 @@ export default function Feedback() {
                 name='name'
                 type='text'
                 placeholder='Insira como deseja se identificar'
-                onChange={ handleChange }
-                value={ nameValue }
+                onChange={ handleChangeName }
               />
             </label>
             <label htmlFor='email'>
@@ -52,6 +54,7 @@ export default function Feedback() {
                 name='email'
                 type='email'
                 placeholder='ex: pietro_hgatim@gmail.com'
+                onChange={ handleChangeName }
               />
             </label>
             <label htmlFor='$chapter'>

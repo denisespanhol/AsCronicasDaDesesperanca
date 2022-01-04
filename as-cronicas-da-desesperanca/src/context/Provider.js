@@ -5,15 +5,18 @@ import AppContext from './AppContext';
 export default function Provider({ children }) {
   const [toFixed, setToFixed] = useState(false);
   const [disableSubmit, setDisableSubmit] = useState(true);
-  const [nameValue, setNameValue] = useState('');
+  const [inputsValues, setInputsValues] = useState({
+    name: '',
+    email: ''
+  });
 
   const state = {
     toFixed,
     setToFixed,
     disableSubmit,
     setDisableSubmit,
-    nameValue,
-    setNameValue
+    inputsValues,
+    setInputsValues
   }
 
   return (
