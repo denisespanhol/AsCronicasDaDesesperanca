@@ -14,20 +14,20 @@ export default function Feedback() {
   }
 
   function handleChange({ target: { value, name }}) {
-    const { nameInput, email } = inputsValues;
-    const toCheckEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-
     setInputsValues((inputsValues) => ({
       ...inputsValues,
       [name]: value
     }));
+  }
 
-    if (nameInput.length > 2 && toCheckEmail.test(email) === true) {
-      setDisableSubmit(false);
-    }
-    if (nameInput.length <= 2 || toCheckEmail.test(email) === false) {
-      setDisableSubmit(true);
-    }
+  const { nameInput, email, selectedChapter } = inputsValues;
+  const toCheckEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
+  if (nameInput.length > 2 && toCheckEmail.test(email) === true && selectedChapter !== 'Selecione o capítulo') {
+    setDisableSubmit(false);
+  }
+  if (nameInput.length <= 2 || toCheckEmail.test(email) === false || selectedChapter === 'Selecione o capítulo') {
+    setDisableSubmit(true);
   }
 
   return (
@@ -57,18 +57,16 @@ export default function Feedback() {
                 name='email'
                 type='email'
                 placeholder='ex: pietro_hgatim@gmail.com'
-                onFocus={ handleChange }
-                onBlur={ handleChange }
                 onChange={ handleChange }
-                onClick={ handleChange }
               />
             </label>
             <label htmlFor='$chapter'>
               3 - Escolha o capítulo
               <select
                 id='$chapter'
-                name='$chapter'
+                name='selectedChapter'
                 placeholder='Selecione o capítulo'
+                onChange={ handleChange }
               >
                 <option disabled selected>Selecione o capítulo</option>
                 <option>Prólogo</option>

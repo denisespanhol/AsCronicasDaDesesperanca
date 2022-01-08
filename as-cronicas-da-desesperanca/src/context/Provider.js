@@ -7,7 +7,8 @@ export default function Provider({ children }) {
   const [disableSubmit, setDisableSubmit] = useState(true);
   const [inputsValues, setInputsValues] = useState({
     nameInput: '',
-    email: ''
+    email: '',
+    selectedChapter: 'Selecione o capítulo'
   });
 
   const state = {
