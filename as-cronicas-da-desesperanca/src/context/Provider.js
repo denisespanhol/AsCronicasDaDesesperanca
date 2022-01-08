@@ -8,7 +8,9 @@ export default function Provider({ children }) {
   const [inputsValues, setInputsValues] = useState({
     nameInput: '',
     email: '',
-    selectedChapter: 'Selecione o capítulo'
+    selectedChapter: 'Selecione o capítulo',
+    whatsYouLiked: '',
+    whatsYouDontLiked: ''
   });
 
   const state = {

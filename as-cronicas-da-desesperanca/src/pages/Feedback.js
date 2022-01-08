@@ -20,13 +20,14 @@ export default function Feedback() {
     }));
   }
 
-  const { nameInput, email, selectedChapter } = inputsValues;
+  const { nameInput, email, selectedChapter,
+    whatsYouLiked, whatsYouDontLiked } = inputsValues;
   const toCheckEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
 
-  if (nameInput.length > 2 && toCheckEmail.test(email) === true && selectedChapter !== 'Selecione o capítulo') {
+  if (nameInput.length > 2 && toCheckEmail.test(email) === true && selectedChapter !== 'Selecione o capítulo' && whatsYouLiked.length >= 30 && whatsYouDontLiked.length >= 30) {
     setDisableSubmit(false);
   }
-  if (nameInput.length <= 2 || toCheckEmail.test(email) === false || selectedChapter === 'Selecione o capítulo') {
+  if (nameInput.length <= 2 || toCheckEmail.test(email) === false || selectedChapter === 'Selecione o capítulo' || whatsYouLiked.length < 30 || whatsYouDontLiked.length < 30) {
     setDisableSubmit(true);
   }
 
@@ -76,20 +77,22 @@ export default function Feedback() {
               4 - Me fala o que curtiu!
               <textarea
                 id='$toLike'
-                name='$toLike'
+                name='whatsYouLiked'
                 cols='50'
                 rows='5'
                 placeholder='Agradeço desde já!'
+                onChange={ handleChange }
               />
             </label>
             <label htmlFor='$toNotLike'>
               5 - E o que não curtiu!
               <textarea
                 id='$toNotLike'
-                name='$toNotLike'
+                name='whatsYouDontLiked'
                 cols='50'
                 rows='5'
                 placeholder='Agradeço desde já!'
+                onChange={ handleChange }
               />
             </label>
             <label htmlFor='$portuguese'>
