@@ -72,6 +72,66 @@
 
   .chapterNumber {
     font-family: 'Overpass Mono', Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    text-align: center;
+    align-self: center;
+    color: rgba(102, 40, 40, 1);
+    background-color: rgba(23, 22, 22, 1);
+    width: 11.08em;
+    margin-top: 6em;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .chapterTitle {
+    font-family: 'Overpass Mono', Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    align-self: center;
+    color: rgba(203, 192, 194, 1);
+    background-color: rgba(23, 22, 22, 1);
+    width: 19.15em;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  
+  .chapterBox {
+    display: flex;
+    align-self: center;
+    width: 18em;
+    margin-bottom: 2em;
+  }
+  
+  .coverImage {
+    width: 18em;
+    height: 20em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .chapterBackground {
+    background-image: url('../images/wallpaper1.png');
+    background-attachment: fixed;
+    width: 136em;
+    height: 50em;
+  }
+
+  .toCentralizeChapterBox{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding-right: 3em;
+    padding-left: 3em;
+  }
+
+  .mainBox {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .chapterNumber {
+    font-family: 'Overpass Mono', Arial, Helvetica, sans-serif;
     font-size: 28px;
     text-align: center;
     align-self: center;
