@@ -8,6 +8,11 @@ import './Feedback.css';
 export default function Feedback() {
   const { disableSubmit, setDisableSubmit,
     inputsValues, setInputsValues } = useContext(AppContext);
+  const { nameInput, email, selectedChapter,
+    whatsYouLiked, whatsYouDontLiked } = inputsValues;
+  const toCheckEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  const likedCharactersNumbers = whatsYouLiked.length;
+  const notLikedCharactersNumbers = whatsYouDontLiked.length;
 
   function thanks() {
     window.alert('Feedback enviado! Muito obrigado!');
@@ -19,12 +24,6 @@ export default function Feedback() {
       [name]: value
     }));
   }
-
-  const { nameInput, email, selectedChapter,
-    whatsYouLiked, whatsYouDontLiked } = inputsValues;
-  const toCheckEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
-  const likedCharactersNumbers = whatsYouLiked.length;
-  const notLikedCharactersNumbers = whatsYouDontLiked.length;
 
   if (nameInput.length > 2 && toCheckEmail.test(email) === true && selectedChapter !== 'Selecione o capítulo' && whatsYouLiked.length >= 30 && whatsYouDontLiked.length >= 30) {
     setDisableSubmit(false);
@@ -55,6 +54,7 @@ export default function Feedback() {
                 type='text'
                 placeholder='Insira como deseja se identificar'
                 onChange={ handleChange }
+                className={ nameInput.length <= 2 ? 'borderInputRed' : 'borderInputGreen'}
               />
             </label>
             <label htmlFor='email'>
@@ -68,6 +68,7 @@ export default function Feedback() {
                 type='email'
                 placeholder='ex: pietro_hgatim@gmail.com'
                 onChange={ handleChange }
+                className={ toCheckEmail.test(email) === false ? 'borderInputRed' : 'borderInputGreen'}
               />
             </label>
             <label htmlFor='$chapter'>
@@ -99,6 +100,7 @@ export default function Feedback() {
                 maxLength="500"
                 minLength="30"
                 onChange={ handleChange }
+                className={ whatsYouLiked.length < 30 ? 'borderInputRed' : 'borderInputGreen'}
               />
               <span className='lengthControl'>{`${likedCharactersNumbers}/500`}</span>
             </label>
@@ -116,6 +118,7 @@ export default function Feedback() {
                 maxLength="500"
                 minLength="30"
                 onChange={ handleChange }
+                className={ whatsYouDontLiked.length < 30 ? 'borderInputRed' : 'borderInputGreen'}
               />
               <span className='lengthControl'>{`${notLikedCharactersNumbers}/500`}</span>
             </label>
@@ -129,6 +132,7 @@ export default function Feedback() {
                 cols='50'
                 rows='5'
                 placeholder='Agradeço desde já!'
+                className='borderInputGreen'
               />
             </label>
             <img src={ divisorImg } alt='divisor' className='divisorImgBot' />

@@ -36,6 +36,14 @@ textarea {
   text-align: center;
 }
 
+.borderInputRed:focus{
+  outline: 2px solid rgb(177, 14, 14);
+}
+
+.borderInputGreen:focus {
+  outline: 2px solid rgb(47, 255, 47);
+}
+
 .feedbackBackground {
   background-image: url('../images/wallpaper1.png');
   background-attachment: fixed;
