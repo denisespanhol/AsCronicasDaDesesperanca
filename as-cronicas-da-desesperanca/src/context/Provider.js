@@ -6,7 +6,7 @@ export default function Provider({ children }) {
   const [toFixed, setToFixed] = useState(false);
   const [disableSubmit, setDisableSubmit] = useState(true);
   const [inputsValues, setInputsValues] = useState({
-    name: '',
+    nameInput: '',
     email: ''
   });
 

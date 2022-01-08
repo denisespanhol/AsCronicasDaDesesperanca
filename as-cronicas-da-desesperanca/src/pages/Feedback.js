@@ -13,16 +13,19 @@ export default function Feedback() {
     window.alert('Feedback enviado! Muito obrigado!');
   }
 
-  function handleChangeName({ target: { value, name }}) {
+  function handleChange({ target: { value, name }}) {
+    const { nameInput, email } = inputsValues;
+    const toCheckEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+
     setInputsValues((inputsValues) => ({
       ...inputsValues,
       [name]: value
     }));
 
-    if (inputsValues.name.length > 2) {
+    if (nameInput.length > 2 && toCheckEmail.test(email) === true) {
       setDisableSubmit(false);
     }
-    if (inputsValues.name.length <= 2) {
+    if (nameInput.length <= 2 || toCheckEmail.test(email) === false) {
       setDisableSubmit(true);
     }
   }
@@ -41,10 +44,10 @@ export default function Feedback() {
               1 - Nome ou apelido
               <input
                 id='name'
-                name='name'
+                name='nameInput'
                 type='text'
                 placeholder='Insira como deseja se identificar'
-                onChange={ handleChangeName }
+                onChange={ handleChange }
               />
             </label>
             <label htmlFor='email'>
@@ -54,7 +57,10 @@ export default function Feedback() {
                 name='email'
                 type='email'
                 placeholder='ex: pietro_hgatim@gmail.com'
-                onChange={ handleChangeName }
+                onFocus={ handleChange }
+                onBlur={ handleChange }
+                onChange={ handleChange }
+                onClick={ handleChange }
               />
             </label>
             <label htmlFor='$chapter'>
