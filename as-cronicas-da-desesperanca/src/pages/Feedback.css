@@ -5,7 +5,7 @@ label {
   display: flex;
   flex-direction: column;
   text-align: left;
-  line-height: 26px;
+  line-height: 28px;
   margin-bottom: 10px;
   font-family: 'Ubuntu', arial;
 }
@@ -14,13 +14,34 @@ input, select {
   align-self: center;
   height: 16px;
   margin-left: 17.6px;
+  margin-bottom: 16px;
   width: 200px;
+  border-radius: 10px;
 }
 
 textarea {
   width: 200px;
   height: 50px;
   margin-left: 16px;
+  border-radius: 10px;
+}
+
+.feedQuestion {
+  display: flex;
+  justify-content: center;
+}
+
+.requiredFields {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.borderInputRed:focus{
+  outline: 2px solid rgb(177, 14, 14);
+}
+
+.borderInputGreen:focus {
+  outline: 2px solid rgb(47, 255, 47);
 }
 
 .feedbackBackground {
@@ -81,8 +102,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-self: center;
-  color: rgba(102, 40, 40, 1);
-  background-color: rgba(18, 17, 17, 1);
   border: none;
   padding: 10px 27px;
   font-size: 16px;
@@ -91,6 +110,27 @@ textarea {
   height: 45px;
   width: 204px;
   font-family: 'Manuale', arial;
+}
+
+.designFeedbackButtons:disabled {
+  background-color: rgb(66, 63, 63);
+  color: black;
+  cursor: default;
+}
+
+.designFeedbackButtons:enabled {
+  background-color: rgba(18, 17, 17, 1);
+  color: rgba(102, 40, 40, 1);
+  cursor: pointer;
+}
+
+.designFeedbackButtons:enabled:hover {
+  background-color: rgba(102, 40, 40, 1);
+  color: rgba(18, 17, 17, 1);
+}
+
+.lengthControl {
+  text-align: end;
 }
 
 @media screen and (min-width: 750px) {
