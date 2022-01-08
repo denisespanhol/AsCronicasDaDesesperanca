@@ -23,6 +23,8 @@ export default function Feedback() {
   const { nameInput, email, selectedChapter,
     whatsYouLiked, whatsYouDontLiked } = inputsValues;
   const toCheckEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  const likedCharactersNumbers = whatsYouLiked.length;
+  const notLikedCharactersNumbers = whatsYouDontLiked.length;
 
   if (nameInput.length > 2 && toCheckEmail.test(email) === true && selectedChapter !== 'Selecione o capítulo' && whatsYouLiked.length >= 30 && whatsYouDontLiked.length >= 30) {
     setDisableSubmit(false);
@@ -41,8 +43,12 @@ export default function Feedback() {
           </section>
           <form className='textFeedbackBox' action='mailto:denisgfespanhol@gmail.com' method='post'>
             <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
+            <span style={{color:'rgb(94, 30, 30)'}} className='requiredFields'>* Campos obrigatórios</span>
             <label htmlFor='name'>
-              1 - Nome ou apelido
+              <div className='feedQuestion'>
+                {`1 - Nome ou apelido `}
+                <span style={{color:'rgb(94, 30, 30)'}}>*</span>
+              </div>
               <input
                 id='name'
                 name='nameInput'
@@ -52,7 +58,10 @@ export default function Feedback() {
               />
             </label>
             <label htmlFor='email'>
-              2 - E-mail
+              <div className='feedQuestion'>
+                {`2 - E-mail `}
+                <span style={{color:'rgb(94, 30, 30)'}}>*</span>
+              </div>
               <input
                 id='email'
                 name='email'
@@ -62,7 +71,10 @@ export default function Feedback() {
               />
             </label>
             <label htmlFor='$chapter'>
-              3 - Escolha o capítulo
+              <div className='feedQuestion'>
+                {`3 - Escolha o capítulo `}
+                <span style={{color:'rgb(94, 30, 30)'}}>*</span>
+              </div>
               <select
                 id='$chapter'
                 name='selectedChapter'
@@ -74,29 +86,43 @@ export default function Feedback() {
               </select>
             </label>
             <label htmlFor='$toLike'>
-              4 - Me fala o que curtiu!
+              <div className='feedQuestion'>
+                {`4 - Me fala o que curtiu! `}
+                <span style={{color:'rgb(94, 30, 30)'}}>*</span>
+              </div>
               <textarea
                 id='$toLike'
                 name='whatsYouLiked'
                 cols='50'
                 rows='5'
-                placeholder='Agradeço desde já!'
+                placeholder='Agradeço desde já! (min: 30 / máx: 500)'
+                maxLength="500"
+                minLength="30"
                 onChange={ handleChange }
               />
+              <span className='lengthControl'>{`${likedCharactersNumbers}/500`}</span>
             </label>
             <label htmlFor='$toNotLike'>
-              5 - E o que não curtiu!
+              <div className='feedQuestion'>
+                {`5 - E o que não curtiu! `}
+                <span style={{color:'rgb(94, 30, 30)'}}>*</span>
+              </div>
               <textarea
                 id='$toNotLike'
                 name='whatsYouDontLiked'
                 cols='50'
                 rows='5'
-                placeholder='Agradeço desde já!'
+                placeholder='Agradeço desde já! (min: 30 / máx: 500)'
+                maxLength="500"
+                minLength="30"
                 onChange={ handleChange }
               />
+              <span className='lengthControl'>{`${notLikedCharactersNumbers}/500`}</span>
             </label>
             <label htmlFor='$portuguese'>
-              6 - Algum erro de português?
+                <div className='feedQuestion'>
+                  6 - Algum erro de português?
+                </div>
               <textarea
                 id='$portuguese'
                 name='$portuguese'
