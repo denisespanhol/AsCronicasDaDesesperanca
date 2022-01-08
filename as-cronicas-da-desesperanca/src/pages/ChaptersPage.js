@@ -13,7 +13,7 @@ export default function ChaptersPage() {
 
   useEffect(() => {
     setToFixed(true);
-  }, [])
+  })
 
   function handleChapterClick() {
     setToFixed(false);

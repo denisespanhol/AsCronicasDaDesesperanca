@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import AppContext from '../context/AppContext';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -14,6 +14,15 @@ export default function Feedback() {
   const likedCharactersNumbers = whatsYouLiked.length;
   const notLikedCharactersNumbers = whatsYouDontLiked.length;
 
+  useEffect(() => {
+    if (nameInput.length > 2 && toCheckEmail.test(email) === true && selectedChapter !== 'Selecione o capítulo' && whatsYouLiked.length >= 30 && whatsYouDontLiked.length >= 30) {
+      setDisableSubmit(false);
+    }
+    if (nameInput.length <= 2 || toCheckEmail.test(email) === false || selectedChapter === 'Selecione o capítulo' || whatsYouLiked.length < 30 || whatsYouDontLiked.length < 30) {
+      setDisableSubmit(true);
+    }
+  })
+
   function thanks() {
     window.alert('Feedback enviado! Muito obrigado!');
   }
@@ -23,13 +32,6 @@ export default function Feedback() {
       ...inputsValues,
       [name]: value
     }));
-  }
-
-  if (nameInput.length > 2 && toCheckEmail.test(email) === true && selectedChapter !== 'Selecione o capítulo' && whatsYouLiked.length >= 30 && whatsYouDontLiked.length >= 30) {
-    setDisableSubmit(false);
-  }
-  if (nameInput.length <= 2 || toCheckEmail.test(email) === false || selectedChapter === 'Selecione o capítulo' || whatsYouLiked.length < 30 || whatsYouDontLiked.length < 30) {
-    setDisableSubmit(true);
   }
 
   return (
@@ -81,9 +83,10 @@ export default function Feedback() {
                 name='selectedChapter'
                 placeholder='Selecione o capítulo'
                 onChange={ handleChange }
+                defaultValue="selected"
               >
-                <option disabled selected>Selecione o capítulo</option>
-                <option>Prólogo</option>
+                <option disabled value="selected">Selecione o capítulo</option>
+                <option value="prologue">Prólogo</option>
               </select>
             </label>
             <label htmlFor='$toLike'>
