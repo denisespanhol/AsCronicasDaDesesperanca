@@ -36,21 +36,21 @@ export default function ChaptersPage() {
           <p className='chapterNumber'>CAPÍTULO I</p>
           <p className='chapterTitle'>Sr. Santos</p>
           <section className='chapterBox'>
-            <img src={ comingSoon } alt='teste' className='coverImage' />
+            <img src={ comingSoon } alt='teste' className='coverComingSoonImage' />
           </section>
         </section>
         <section className='toCentralizeChapterBox'>
           <p className='chapterNumber'>CAPÍTULO II</p>
           <p className='chapterTitle'>Ontem</p>
           <section className='chapterBox'>
-            <img src={ comingSoon } alt='teste' className='coverImage' />
+            <img src={ comingSoon } alt='teste' className='coverComingSoonImage' />
           </section>
         </section>
         <section className='toCentralizeChapterBox'>
           <p className='chapterNumber'>CAPÍTULO III</p>
           <p className='chapterTitle'>Papílio</p>
           <section className='chapterBox'>
-            <img src={ comingSoon } alt='teste' className='coverImage' />
+            <img src={ comingSoon } alt='teste' className='coverComingSoonImage' />
           </section>
         </section>
       </main>

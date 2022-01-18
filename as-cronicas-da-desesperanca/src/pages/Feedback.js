@@ -43,7 +43,7 @@ export default function Feedback() {
             <p className='feedbackTitle'>ME CONTA O QUE ACHOU!</p>
           </section>
           <form className='textFeedbackBox' action='https://api.staticforms.xyz/submit' method='post'>
-            <input type="hidden" name="accessKey" value="dc2bd44b-3e15-4b72-a236-a113a0b8b91b" />
+            <input type="hidden" name="accessKey" value={ process.env.REACT_APP_STATICK_CODE } />
             <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
             <span style={{color:'rgb(94, 30, 30)'}} className='requiredFields'>* Campos obrigatórios</span>
             <label htmlFor='name'>
