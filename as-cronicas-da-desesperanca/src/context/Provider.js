@@ -6,11 +6,11 @@ export default function Provider({ children }) {
   const [toFixed, setToFixed] = useState(false);
   const [disableSubmit, setDisableSubmit] = useState(true);
   const [inputsValues, setInputsValues] = useState({
-    nameInput: '',
-    email: '',
-    selectedChapter: 'Selecione o capítulo',
-    whatsYouLiked: '',
-    whatsYouDontLiked: ''
+    $nameInput: '',
+    $email: '',
+    $selectedChapter: 'Selecione o capítulo',
+    $whatsYouLiked: '',
+    $whatsYouDontLiked: ''
   });
 
   const state = {
