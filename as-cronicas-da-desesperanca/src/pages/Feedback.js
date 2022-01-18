@@ -13,7 +13,6 @@ export default function Feedback() {
   const toCheckEmail = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
   const likedCharactersNumbers = $whatsYouLiked.length;
   const notLikedCharactersNumbers = $whatsYouDontLiked.length;
-  const staticCode = process.env.REACT_APP_STATICK_CODE;
 
   useEffect(() => {
     if ($nameInput.length > 2 && toCheckEmail.test($email) === true && $selectedChapter !== 'Selecione o capítulo' && $whatsYouLiked.length >= 30 && $whatsYouDontLiked.length >= 30) {
@@ -44,7 +43,7 @@ export default function Feedback() {
             <p className='feedbackTitle'>ME CONTA O QUE ACHOU!</p>
           </section>
           <form className='textFeedbackBox' action='https://api.staticforms.xyz/submit' method='post'>
-            <input type="hidden" name="accessKey" value={ staticCode } />
+            <input type="hidden" name="accessKey" value={ process.env.REACT_APP_STATICK_CODE } />
             <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
             <span style={{color:'rgb(94, 30, 30)'}} className='requiredFields'>* Campos obrigatórios</span>
             <label htmlFor='name'>
