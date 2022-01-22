@@ -64,8 +64,6 @@
   .chapterBackground {
     background-image: url('../images/wallpaper1.png');
     background-attachment: fixed;
-    width: 136em;
-    height: 50em;
   }
 
   .toCentralizeChapterBox{
@@ -78,7 +76,13 @@
 
   .mainBox {
     display: flex;
+    flex-flow: column;
+  }
+
+  .forThreeBoxes {
+    display: flex;
     flex-flow: row;
+    align-self: center;
   }
 
   .chapterNumber {
@@ -89,7 +93,7 @@
     color: rgba(102, 40, 40, 1);
     background-color: rgba(23, 22, 22, 1);
     width: 11.08em;
-    margin-top: 6em;
+    margin-top: 2em;
     margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -124,8 +128,8 @@
   .chapterBackground {
     background-image: url('../images/wallpaper1.png');
     background-attachment: fixed;
-    width: 136em;
-    height: 50em;
+    min-width: 100%;
+    min-height: 100%;
   }
 
   .toCentralizeChapterBox{
@@ -138,7 +142,13 @@
 
   .mainBox {
     display: flex;
+    flex-flow: column;
+  }
+
+  .forThreeBoxes {
+    display: flex;
     flex-flow: row;
+    align-self: center;
   }
 
   .chapterNumber {
@@ -149,7 +159,7 @@
     color: rgba(102, 40, 40, 1);
     background-color: rgba(23, 22, 22, 1);
     width: 14.85em;
-    margin-top: 6em;
+    margin-top: 2em;
     margin-bottom: 0;
     padding-top: 10px;
     padding-bottom: 10px;

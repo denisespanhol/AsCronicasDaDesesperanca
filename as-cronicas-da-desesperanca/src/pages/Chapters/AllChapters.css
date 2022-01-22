@@ -58,7 +58,9 @@
 
 .divisorImgTop {
   margin-top: -2em;
-  margin-bottom: -3.6em;
+  margin-bottom: -3em;
+  width: 90%;
+  align-self: center;
 }
 
 .textAllChaptersBox {
@@ -109,6 +111,37 @@
   font-family: 'Manuale', Arial, Helvetica, sans-serif;
 }
 
+.designEndButtonsDisabled {
+  display: flex;
+  justify-content: center;
+  color: rgba(18, 17, 17, 1);
+  background-color: rgb(77, 71, 71);
+  border: none;
+  padding: 10px 27px;
+  font-size: 16px;
+  border-radius: 50px;
+  margin-bottom: 1em;
+  height: 45px;
+  width: 204px;
+  font-family: 'Manuale', Arial, Helvetica, sans-serif;
+}
+
+.designEndButtonsDisabled:hover {
+  color: rgba(18, 17, 17, 1);
+  background-color: rgb(77, 71, 71);
+  cursor: initial;
+}
+
+.coverImg {
+  align-self: center;
+  width: 80%;
+}
+
+.ilustratorCredits {
+  font-size: 12px;
+  text-align: center;
+}
+
 /* para telas maiores */
 @media screen and (min-width: 1050px) {
   .titleAllChaptersBox {
@@ -142,6 +175,17 @@
     -webkit-text-fill-color: transparent;
     text-align: center;
     width: 400px;
+  }
+
+  .readingAllChaptersBox {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    color: rgb(199, 190, 190);
+    height: 100%;
+    width: 60%;
+    background-color: rgba(23, 22, 22, 1);
+    border: 1px black solid;
   }
 
   .divisorImgTop {
@@ -204,5 +248,15 @@
     height: 45px;
     width: 204px;
     font-family: 'Manuale', Arial, Helvetica, sans-serif;
+  }
+
+  .coverImg {
+    align-self: center;
+    width: 500px;
+  }
+  
+  .ilustratorCredits {
+    font-size: 12px;
+    text-align: center;
   }
 }

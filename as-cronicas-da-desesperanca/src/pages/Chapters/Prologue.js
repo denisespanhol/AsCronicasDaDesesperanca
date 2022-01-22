@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import divisorImg from '../../images/divider-4715969.png';
+import prologueCover from '../../images/Prologue01.jpeg';
 import './AllChapters.css';
 
 export default function Prologue() {
@@ -15,8 +16,11 @@ export default function Prologue() {
             <p className='allChaptersNumber'>PRÓLOGO</p>
             <p className='allChaptersTitle'>Uma Luz Verde Num Céu de Maio</p>
           </section>
+          <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
+          <img src={ prologueCover } alt='Capa do prólogo' className='coverImg' />
+          <p className='ilustratorCredits'>Ilustração: Paulo Matiazi</p>
+          <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
           <section className='textAllChaptersBox'>
-            <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
             <p>
               Uma criança corria desesperadamente pelas ruas de uma cidade brasileira. Em suas mãos haviam trezentos gramas de salsicha. Era fim de tarde. O laranja coloria o céu com tons de ingratidão, um quase dourado sinistro. Não parecia ser um bom dia para ninguém. Nem para a criança que fugia com um saquinho de salsichas roubadas do mercado, nem para os três seguranças que a perseguiam incansavelmente, como se o valor daquela carne barata fosse fazer diferença em suas vidas, tão baratas para o mercado quanto as salsichas roubadas.
             </p>
@@ -144,7 +148,8 @@ export default function Prologue() {
         </Link>
         <button
           type='button'
-          className='designEndButtons'
+          className='designEndButtonsDisabled'
+          disabled='true'
         >
           Próximo capítulo
         </button>
