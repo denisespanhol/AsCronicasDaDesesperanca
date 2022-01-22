@@ -58,7 +58,9 @@
 
 .divisorImgTop {
   margin-top: -2em;
-  margin-bottom: -3.6em;
+  margin-bottom: -3em;
+  width: 90%;
+  align-self: center;
 }
 
 .textAllChaptersBox {
@@ -107,6 +109,16 @@
   height: 45px;
   width: 204px;
   font-family: 'Manuale', Arial, Helvetica, sans-serif;
+}
+
+.coverImg {
+  align-self: center;
+  width: 80%;
+}
+
+.ilustratorCredits {
+  font-size: 12px;
+  text-align: center;
 }
 
 /* para telas maiores */
@@ -204,5 +216,15 @@
     height: 45px;
     width: 204px;
     font-family: 'Manuale', Arial, Helvetica, sans-serif;
+  }
+
+  .coverImg {
+    align-self: center;
+    width: 500px;
+  }
+  
+  .ilustratorCredits {
+    font-size: 12px;
+    text-align: center;
   }
 }
