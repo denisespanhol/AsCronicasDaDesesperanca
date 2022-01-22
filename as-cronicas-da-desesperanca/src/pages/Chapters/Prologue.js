@@ -18,7 +18,7 @@ export default function Prologue() {
           </section>
           <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
           <img src={ prologueCover } alt='Capa do prólogo' className='coverImg' />
-          <p className='ilustratorCredits'>Ilustração: Paulo Matiazi.</p>
+          <p className='ilustratorCredits'>Ilustração: Paulo Matiazi</p>
           <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
           <section className='textAllChaptersBox'>
             <p>
@@ -148,7 +148,8 @@ export default function Prologue() {
         </Link>
         <button
           type='button'
-          className='designEndButtons'
+          className='designEndButtonsDisabled'
+          disabled='true'
         >
           Próximo capítulo
         </button>
