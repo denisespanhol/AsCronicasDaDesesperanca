@@ -90,7 +90,7 @@ body {
   justify-content: center;
   color: rgba(102, 40, 40, 1);
   background-color: rgba(18, 17, 17, 1);
-  border: none;
+  border: 1px solid rgba(102, 40, 40, 1);
   padding: 10px 27px;
   font-size: 16px;
   border-radius: 50px;
@@ -105,7 +105,7 @@ body {
   justify-content: center;
   background-color: rgba(18, 17, 17, 1);
   color: rgba(102, 40, 40, 1);
-  border: none;
+  border: 1px solid rgba(102, 40, 40, 1);
   padding: 10px 10px;
   font-size: 11px;
   border-radius: 50px;
@@ -173,7 +173,7 @@ body {
     justify-content: center;
     color: rgba(102, 40, 40, 1);
     background-color: rgba(18, 17, 17, 1);
-    border: none;
+    border: 1px solid rgba(102, 40, 40, 1);
     padding: 10px 27px;
     font-size: 13px;
     border-radius: 50px;
@@ -188,7 +188,7 @@ body {
     justify-content: center;
     background-color: rgba(18, 17, 17, 1);
     color: rgba(102, 40, 40, 1);
-    border: none;
+    border: 1px solid rgba(102, 40, 40, 1);
     padding: 10px 10px;
     font-size: 11px;
     border-radius: 50px;
@@ -295,7 +295,7 @@ body {
     justify-content: center;
     color: rgba(102, 40, 40, 1);
     background-color: rgba(18, 17, 17, 1);
-    border: none;
+    border: 1px solid rgba(102, 40, 40, 1);
     padding: 11px 27px;
     font-size: 21px;
     border-radius: 50px;
@@ -310,7 +310,7 @@ body {
     justify-content: center;
     background-color: rgba(18, 17, 17, 1);
     color: rgba(102, 40, 40, 1);
-    border: none;
+    border: 1px solid rgba(102, 40, 40, 1);
     padding: 15px 10px;
     font-size: 15px;
     border-radius: 50px;

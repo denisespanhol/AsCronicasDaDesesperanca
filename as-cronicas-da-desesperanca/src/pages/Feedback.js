@@ -15,10 +15,10 @@ export default function Feedback() {
   const notLikedCharactersNumbers = $whatsYouDontLiked.length;
 
   useEffect(() => {
-    if ($nameInput.length > 2 && toCheckEmail.test($email) === true && $selectedChapter !== 'Selecione o capítulo' && $whatsYouLiked.length >= 30 && $whatsYouDontLiked.length >= 30) {
+    if ($nameInput.length > 2 && toCheckEmail.test($email) === true && $selectedChapter !== 'Selecione o capítulo' && $whatsYouLiked.length >= 10 && $whatsYouDontLiked.length >= 10) {
       setDisableSubmit(false);
     }
-    if ($nameInput.length <= 2 || toCheckEmail.test($email) === false || $selectedChapter === 'Selecione o capítulo' || $whatsYouLiked.length < 30 || $whatsYouDontLiked.length < 30) {
+    if ($nameInput.length <= 2 || toCheckEmail.test($email) === false || $selectedChapter === 'Selecione o capítulo' || $whatsYouLiked.length < 10 || $whatsYouDontLiked.length < 10) {
       setDisableSubmit(true);
     }
   })
@@ -101,11 +101,11 @@ export default function Feedback() {
                 name='$whatsYouLiked'
                 cols='50'
                 rows='5'
-                placeholder='Agradeço desde já! (min: 30 / máx: 500)'
+                placeholder='Agradeço desde já! (min: 10 / máx: 500)'
                 maxLength="500"
                 minLength="30"
                 onChange={ handleChange }
-                className={ $whatsYouLiked.length < 30 ? 'borderInputRed' : 'borderInputGreen'}
+                className={ $whatsYouLiked.length < 10 ? 'borderInputRed' : 'borderInputGreen'}
               />
               <span className='lengthControl'>{`${likedCharactersNumbers}/500`}</span>
             </label>
@@ -119,11 +119,11 @@ export default function Feedback() {
                 name='$whatsYouDontLiked'
                 cols='50'
                 rows='5'
-                placeholder='Agradeço desde já! (min: 30 / máx: 500)'
+                placeholder='Agradeço desde já! (min: 10 / máx: 500)'
                 maxLength="500"
                 minLength="30"
                 onChange={ handleChange }
-                className={ $whatsYouDontLiked.length < 30 ? 'borderInputRed' : 'borderInputGreen'}
+                className={ $whatsYouDontLiked.length < 10 ? 'borderInputRed' : 'borderInputGreen'}
               />
               <span className='lengthControl'>{`${notLikedCharactersNumbers}/500`}</span>
             </label>
