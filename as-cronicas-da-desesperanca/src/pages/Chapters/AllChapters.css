@@ -101,7 +101,7 @@
   justify-content: center;
   color: rgba(102, 40, 40, 1);
   background-color: rgba(18, 17, 17, 1);
-  border: none;
+  border: 1px solid rgba(102, 40, 40, 1);
   padding: 10px 27px;
   font-size: 16px;
   border-radius: 50px;
@@ -229,7 +229,6 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
   }
 
   .designEndButtons {
@@ -237,14 +236,29 @@
     justify-content: center;
     color: rgba(102, 40, 40, 1);
     background-color: rgba(18, 17, 17, 1);
+    border: 1px solid rgba(102, 40, 40, 1);
+    padding: 10px 27px;
+    font-size: 16px;
+    border-radius: 50px;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+    height: 45px;
+    width: 204px;
+    font-family: 'Manuale', Arial, Helvetica, sans-serif;
+  }
+
+  .designEndButtonsDisabled {
+    display: flex;
+    justify-content: center;
+    color: rgba(18, 17, 17, 1);
+    background-color: rgb(77, 71, 71);
     border: none;
     padding: 10px 27px;
     font-size: 16px;
     border-radius: 50px;
     margin-top: 1em;
     margin-bottom: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
     height: 45px;
     width: 204px;
     font-family: 'Manuale', Arial, Helvetica, sans-serif;

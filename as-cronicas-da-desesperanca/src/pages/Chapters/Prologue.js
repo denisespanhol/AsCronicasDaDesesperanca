@@ -135,25 +135,25 @@ export default function Prologue() {
             <img src={ divisorImg } alt='divisor' className='divisorImgBot' />
             <p className='theEnd'>FIM DO PRÓLOGO</p>
           </section>
+          <section className='endButtons'>
+              <Link to='/feedback' style={{ textDecoration: 'none' }}>
+                <button
+                  type='button'
+                  className='designEndButtons'
+                >
+                  Dê seu Feedback!
+                </button>
+              </Link>
+              <button
+                type='button'
+                className='designEndButtonsDisabled'
+                disabled='true'
+              >
+                Próximo capítulo
+              </button>
+          </section>
         </section>
       </main>
-      <section className='endButtons'>
-        <Link to='/feedback' style={{ textDecoration: 'none' }}>
-          <button
-            type='button'
-            className='designEndButtons'
-          >
-            Dê seu Feedback!
-          </button>
-        </Link>
-        <button
-          type='button'
-          className='designEndButtonsDisabled'
-          disabled='true'
-        >
-          Próximo capítulo
-        </button>
-      </section>
       <Footer />
     </section>
   );
