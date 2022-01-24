@@ -5,7 +5,7 @@
   background-attachment: fixed;
 }
 
-.toCentralizeChapterBox{
+.toCentralizeChapterBox {
   display: flex;
   flex-flow: column;
   justify-content: center;
