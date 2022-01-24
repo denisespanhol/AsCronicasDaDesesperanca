@@ -78,7 +78,7 @@
 
 .divisorImgBot {
   margin-top: -3.6em;
-  margin-bottom: -2em;
+  margin-bottom: -4em;
 }
 
 .theEnd {
@@ -86,6 +86,7 @@
   background: -webkit-linear-gradient(rgba(102, 40, 40, 1), rgba(102, 40, 40, 1), rgba(27, 26, 26, 1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 2em;
 }
 
 .endButtons {
@@ -135,6 +136,7 @@
 .coverImg {
   align-self: center;
   width: 80%;
+  border: 6px solid black;
 }
 
 .ilustratorCredits {
@@ -267,6 +269,7 @@
   .coverImg {
     align-self: center;
     width: 500px;
+    border: 6px solid black;
   }
   
   .ilustratorCredits {

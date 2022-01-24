@@ -147,7 +147,7 @@ export default function Prologue() {
               <button
                 type='button'
                 className='designEndButtonsDisabled'
-                disabled='true'
+                disabled={ true }
               >
                 Próximo capítulo
               </button>
