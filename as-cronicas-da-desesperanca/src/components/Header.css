@@ -45,9 +45,7 @@ nav {
 }
 
 .navLinks {
-  background: -webkit-linear-gradient(rgba(203, 192, 194, 1), rgba(203, 192, 194, 1), rgba(27, 26, 26, 1));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgba(203, 192, 194, 1);
   display: flex;
   flex-flow: column, wrap;
   font-family: 'Overpass Mono', cursive;
