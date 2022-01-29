@@ -15,16 +15,20 @@ export default function Feedback() {
   const notLikedCharactersNumbers = $whatsYouDontLiked.length;
 
   useEffect(() => {
-    if ($nameInput.length > 2 && toCheckEmail.test($email) === true && $selectedChapter !== 'Selecione o capítulo' && $whatsYouLiked.length >= 10 && $whatsYouDontLiked.length >= 10) {
+    if ($nameInput.length > 2 && toCheckEmail.test($email) && $selectedChapter !== 'Selecione o capítulo' && $whatsYouLiked.length >= 10 && $whatsYouDontLiked.length >= 10) {
       setDisableSubmit(false);
     }
-    if ($nameInput.length <= 2 || toCheckEmail.test($email) === false || $selectedChapter === 'Selecione o capítulo' || $whatsYouLiked.length < 10 || $whatsYouDontLiked.length < 10) {
+    if ($nameInput.length <= 2 || !toCheckEmail.test($email) || $selectedChapter === 'Selecione o capítulo' || $whatsYouLiked.length < 10 || $whatsYouDontLiked.length < 10) {
       setDisableSubmit(true);
     }
   })
 
   function thanks() {
-    window.alert('Feedback enviado! Muito obrigado!');
+    try {
+      window.alert('Feedback enviado! Muito obrigado!');
+    } catch (error) {
+      window.alert(error);
+    }
   }
 
   function handleChange({ target: { value, name }}) {
@@ -103,7 +107,7 @@ export default function Feedback() {
                 rows='5'
                 placeholder='Agradeço desde já! (min: 10 / máx: 500)'
                 maxLength="500"
-                minLength="30"
+                minLength="10"
                 onChange={ handleChange }
                 className={ $whatsYouLiked.length < 10 ? 'borderInputRed' : 'borderInputGreen'}
               />
@@ -121,7 +125,7 @@ export default function Feedback() {
                 rows='5'
                 placeholder='Agradeço desde já! (min: 10 / máx: 500)'
                 maxLength="500"
-                minLength="30"
+                minLength="10"
                 onChange={ handleChange }
                 className={ $whatsYouDontLiked.length < 10 ? 'borderInputRed' : 'borderInputGreen'}
               />
