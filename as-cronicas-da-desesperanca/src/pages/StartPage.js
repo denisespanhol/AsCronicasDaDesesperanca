@@ -1,22 +1,11 @@
-import React, { useContext, useEffect } from 'react';
-import AppContext from '../context/AppContext';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import "./StartPage.css";
 
 export default function StartPage() {
-  const { setToFixed } = useContext(AppContext);
-
   useEffect(() => {
     document.title = 'As Crônicas da Desesperança'
   }, [])
-
-  function handleAuthorClick() {
-    setToFixed(false);
-  }
-
-  function handleAboutClick() {
-    setToFixed(false);
-  }
 
   return (
     <main>
@@ -26,7 +15,7 @@ export default function StartPage() {
         <p className="eODiaDeCaim">E O DIA DE CAIM</p>
         <p className="livroI">LIVRO I</p>
       </section>
-      <footer className="startFooter toCentralizeFooter">
+      <footer className="startFooter toCentralizeFooterStart">
         <section className="toCentralizeButtonPrincipal">
           <Link to="/chapters" style={{ textDecoration: 'none' }}>
             <button
@@ -42,7 +31,6 @@ export default function StartPage() {
             <button
               type="button"
               className="designOthersButtons"
-              onClick={ handleAuthorClick }
             >
               SOBRE O AUTOR
             </button>
@@ -51,7 +39,6 @@ export default function StartPage() {
             <button
               type="button"
               className="designOthersButtons"
-              onClick={ handleAboutClick }
             >
               CONHEÇA O PROJETO
             </button>
