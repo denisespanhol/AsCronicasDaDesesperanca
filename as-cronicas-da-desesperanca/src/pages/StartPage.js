@@ -1,12 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import "./StartPage.css";
 
 export default function StartPage() {
-  useEffect(() => {
-    document.title = 'As Crônicas da Desesperança'
-  }, [])
-
   return (
     <main>
       <section className="toCentralizeTitle">
