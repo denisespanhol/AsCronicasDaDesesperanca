@@ -52,7 +52,7 @@ body {
   padding-bottom: 40%;
 }
 
-.toCentralizeFooter {
+.toCentralizeFooterStart {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -77,13 +77,10 @@ body {
 
 .startFooter {
   margin-top: 1rem;
-  background-color: rgba(23, 22, 22, 1);
   bottom: 3em;
   left: 0;
   width: 100%;
 }
-
-/* referência de footer: https://www.codegrepper.com/code-examples/javascript/react+footer+responsive. */
 
 .designButtonPrincipal {
   display: flex;
@@ -277,18 +274,6 @@ body {
     justify-content: center;
     margin-right: 4%;
   }
-  
-  .footer {
-    margin-top: 1rem;
-    padding: 1rem;
-    background-color: rgba(23, 22, 22, 1);
-    position: fixed;
-    bottom: 1.5em;
-    left: 0;
-    width: 100%;
-  }
-  
-  /* referência de footer: https://www.codegrepper.com/code-examples/javascript/react+footer+responsive. */
   
   .designButtonPrincipal {
     display: flex;
