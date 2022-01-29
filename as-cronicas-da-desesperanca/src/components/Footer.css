@@ -11,18 +11,12 @@ body {
   min-height: 100%;
 }
 
-.theFooter {
-  display: flex;
-  justify-content: center;
-  margin-top: auto;
-  background-color: rgb(18, 17, 17, 1);
-}
-
-.toCentralizeFooter2 {
+.toCentralizeFooter {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  background-color: rgb(18, 17, 17, 1);
 }
 
 .copyright {
@@ -61,13 +55,8 @@ body {
     flex-direction: column;
     min-height: 100%;
   }
-
-  .theFooter {
-    margin-top: auto;
-    background-color: rgb(18, 17, 17, 1);
-  }
   
-  .toCentralizeFooter2 {
+  .toCentralizeFooter {
     display: flex;
     flex-flow: row;
     justify-content: center;
