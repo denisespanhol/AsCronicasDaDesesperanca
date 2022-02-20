@@ -5,6 +5,7 @@ import ChaptersPage from "./pages/ChaptersPage";
 import AuthorsPage from "./pages/AuthorsPage";
 import AboutPage from "./pages/AboutPage";
 import Prologue from "./pages/Chapters/Prologue";
+import ChapterI from "./pages/Chapters/ChapterI";
 import Feedback from "./pages/Feedback";
 
 export default function ToRoutes() {
@@ -12,6 +13,7 @@ export default function ToRoutes() {
     <Switch>
       <Route exact path="/" component={ StartPage } />
       <Route path="/chapters/prologue" component={ Prologue } />
+      <Route path="/chapters/chapterI" component={ ChapterI } />
       <Route path="/chapters" component={ ChaptersPage } />
       <Route path="/author" component={ AuthorsPage } />
       <Route path="/about" component={ AboutPage } />
