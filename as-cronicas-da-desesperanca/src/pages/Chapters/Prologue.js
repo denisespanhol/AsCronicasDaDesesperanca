@@ -144,13 +144,14 @@ export default function Prologue() {
                   Dê seu Feedback!
                 </button>
               </Link>
-              <button
-                type='button'
-                className='designEndButtonsDisabled'
-                disabled={ true }
-              >
-                Próximo capítulo
-              </button>
+              <Link to='/chapters/chapterI' style={{ textDecoration: 'none' }}>
+                <button
+                  type='button'
+                  className='designEndButtons'
+                >
+                  Próximo capítulo
+                </button>
+              </Link>
           </section>
         </section>
       </main>
