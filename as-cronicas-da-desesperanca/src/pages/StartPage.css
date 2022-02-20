@@ -18,7 +18,7 @@ body {
 .desesperança {
   font-family: 'Overpass Mono', Arial, Helvetica, sans-serif;
   font-size: 40px;
-  background: -webkit-linear-gradient(rgba(102, 40, 40, 1), rgba(102, 40, 40, 1), rgba(27, 26, 26, 1));
+  background: -webkit-linear-gradient(rgb(163, 42, 42), rgba(163, 42, 42), rgba(27, 26, 26, 1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 0em;
@@ -85,9 +85,9 @@ body {
 .designButtonPrincipal {
   display: flex;
   justify-content: center;
-  color: rgba(102, 40, 40, 1);
+  color: rgba(163, 42, 42);
   background-color: rgba(18, 17, 17, 1);
-  border: 1px solid rgba(102, 40, 40, 1);
+  border: 1px solid rgba(163, 42, 42);
   padding: 10px 27px;
   font-size: 16px;
   border-radius: 50px;
@@ -101,8 +101,8 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgba(18, 17, 17, 1);
-  color: rgba(102, 40, 40, 1);
-  border: 1px solid rgba(102, 40, 40, 1);
+  color: rgba(163, 42, 42);
+  border: 1px solid rgba(163, 42, 42);
   padding: 10px 10px;
   font-size: 11px;
   border-radius: 50px;
@@ -113,13 +113,13 @@ body {
 }
 
 .designButtonPrincipal:hover {
-  background-color: rgba(102, 40, 40, 1);
+  background-color: rgba(163, 42, 42);
   color: rgba(18, 17, 17, 1);
   cursor: pointer;
 }
 
 .designOthersButtons:hover {
-  background-color: rgba(102, 40, 40, 1);
+  background-color: rgba(163, 42, 42);
   color: rgba(18, 17, 17, 1);
   cursor: pointer;
 }

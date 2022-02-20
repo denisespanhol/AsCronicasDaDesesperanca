@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 import divisorImg from '../../images/divider-4715969.png';
-import prologueCover from '../../images/Prologue01.jpeg';
+import prologueCover from '../../images/arte_prólogo.jpg';
 import './AllChapters.css';
 
 export default function Prologue() {
@@ -144,13 +144,14 @@ export default function Prologue() {
                   Dê seu Feedback!
                 </button>
               </Link>
-              <button
-                type='button'
-                className='designEndButtonsDisabled'
-                disabled={ true }
-              >
-                Próximo capítulo
-              </button>
+              <Link to='/chapters/chapterI' style={{ textDecoration: 'none' }}>
+                <button
+                  type='button'
+                  className='designEndButtons'
+                >
+                  Próximo capítulo
+                </button>
+              </Link>
           </section>
         </section>
       </main>

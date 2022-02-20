@@ -15,7 +15,7 @@ header {
 .desesperançaHeader {
   font-family: 'Overpass Mono', cursive;
   font-size: 20px;
-  background: -webkit-linear-gradient(rgba(102, 40, 40, 1), rgba(102, 40, 40, 1), rgba(27, 26, 26, 1));
+  background: -webkit-linear-gradient(rgba(163, 42, 42), rgba(163, 42, 42), rgba(27, 26, 26, 1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-top: 0em;

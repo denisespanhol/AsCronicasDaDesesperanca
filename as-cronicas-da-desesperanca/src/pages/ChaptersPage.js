@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import prologueCover from '../images/prologueCover.jpg';
+import chapter1Cover from '../images/chapter1Cover.jpg';
 import comingSoon from '../images/EM-BREVE.png';
 import './ChaptersPage.css';
 
@@ -26,7 +27,9 @@ export default function ChaptersPage() {
             <p className='chapterNumber'>CAPÍTULO I</p>
             <p className='chapterTitle'>Sr. Santos</p>
             <section className='chapterBox'>
-              <img src={ comingSoon } alt='capa' className='coverComingSoonImage' />
+              <Link to="/chapters/chapterI">
+                <img src={ chapter1Cover } alt='capa' className='coverImage' />
+              </Link>
             </section>
           </section>
           <section className='toCentralizeChapterBox'>
