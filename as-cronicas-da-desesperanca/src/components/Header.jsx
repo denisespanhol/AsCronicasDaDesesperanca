@@ -1,6 +1,5 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import AppContext from '../context/AppContext';
 import solidFeather from '../images/feather-solid.svg';
 import solidBook from '../images/book-open-solid.svg';
 import solidComment from '../images/comments-solid.svg';
@@ -8,28 +7,8 @@ import solidCat from '../images/cat-solid.svg';
 import './Header.css';
 
 export default function Header() {
-  const { toFixed, setToFixed } = useContext(AppContext);
-
-  let theHeader = {
-    backgroundColor: "rgba(18, 17, 17, 1)",
-    color: "whitesmoke",
-  };
-
-  if (toFixed && window.innerWidth > 1049) {
-    theHeader = {
-      backgroundColor: "rgba(18, 17, 17, 1)",
-      color: "whitesmoke",
-      position: "fixed",
-      width: "100%",
-    }
-  }
-
-  function handleChapterClick() {
-    setToFixed(false);
-  }
-
   return (
-    <header style={theHeader}>
+    <header>
       <section className="toCentralizeTitleInHeader">
         <Link
           to='/'
@@ -51,7 +30,6 @@ export default function Header() {
           <Link
             to='/about'
             style={{ textDecoration: 'none' }}
-            onClick={ handleChapterClick }
           >
             <p className='navLinks'>SOBRE</p>
           </Link>
@@ -61,7 +39,6 @@ export default function Header() {
           <Link
             to='/author'
             style={{ textDecoration: 'none' }}
-            onClick={ handleChapterClick }
           >
             <p className='navLinks'>AUTOR</p>
           </Link>
@@ -71,7 +48,6 @@ export default function Header() {
           <Link
             to='/feedback'
             style={{ textDecoration: 'none' }}
-            onClick={ handleChapterClick }
           >
             <p className='navLinks'>FEEDBACK</p>
           </Link>
