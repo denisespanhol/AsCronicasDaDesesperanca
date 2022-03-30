@@ -24,11 +24,7 @@ export default function Feedback() {
   })
 
   function thanks() {
-    try {
-      window.alert('Feedback enviado! Muito obrigado!');
-    } catch (error) {
-      window.alert(error);
-    }
+    window.alert('Feedback enviado! Muito obrigado!');
   }
 
   function handleChange({ target: { value, name }}) {
@@ -92,7 +88,8 @@ export default function Feedback() {
                 defaultValue="selected"
               >
                 <option disabled value="selected">Selecione o capítulo</option>
-                <option value="prologue">Prólogo</option>
+                <option value="prologue">Prólogo: Uma Luz Verde Num Céu de Maio</option>
+                <option value="prologue">Capítulo I: Sr. Santos</option>
               </select>
             </label>
             <label htmlFor='$toLike'>

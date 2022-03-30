@@ -66,6 +66,7 @@ textarea {
   background-color: rgba(23, 22, 22, 1);
   border: 1px black solid;
   font-family: 'Ubuntu', arial;
+  z-index: 2;
 }
 
 .titleFeedbackBox {
@@ -246,5 +247,11 @@ textarea {
     font-family: 'Ubuntu', arial;
     line-height: 2em;
     padding-top: 1em;
+  }
+
+  .divisorImgBot {
+    margin-top: -3.6em;
+    margin-bottom: -4em;
+    z-index: -1;
   }
 }
