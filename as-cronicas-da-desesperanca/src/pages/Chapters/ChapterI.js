@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
-import prologueCover from '../../images/arte_prólogo.jpg';
+import chapter1Cover from '../../images/capitulo1.jpg';
 import divisorImg from '../../images/divider-4715969.png';
 import './AllChapters.css';
 
@@ -17,7 +17,7 @@ export default function ChapterI() {
             <p className='allChaptersTitle'>SR. SANTOS</p>
           </section>
           <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
-          <img src={ prologueCover } alt='Capa do prólogo' className='coverImg' />
+          <img src={ chapter1Cover } alt='Capa do prólogo' className='coverImg' />
           <p className='ilustratorCredits'>Ilustração: Paulo Matiazi</p>
           <img src={ divisorImg } alt='divisor' className='divisorImgTop' />
           <section className='textAllChaptersBox'>

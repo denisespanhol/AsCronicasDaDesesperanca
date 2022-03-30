@@ -249,7 +249,9 @@ textarea {
     padding-top: 1em;
   }
 
-  .divisorImgBot {
+  .divisorImgBotFeedback {
+    align-self: center;
+    width: 50%;
     margin-top: -3.6em;
     margin-bottom: -4em;
     z-index: -1;

@@ -141,7 +141,7 @@ export default function Feedback() {
                 className='borderInputGreen'
               />
             </label>
-            <img src={ divisorImg } alt='divisor' className='divisorImgBot' />
+            <img src={ divisorImg } alt='divisor' className='divisorImgBotFeedback' />
             <input type="hidden" name="redirectTo" value="https://ascronicasdadesesperanca.com.br/feedback"></input>
             <button
               type='submit'
