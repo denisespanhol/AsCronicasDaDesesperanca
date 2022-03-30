@@ -29,7 +29,7 @@ export default function AuthorsPage() {
               Denis Espanhol é autor de contos, peças de teatro e de um livro infantil, e ainda se encontra no desafio de finalizar seu primeiro romance (o que é um dos motivos para este site existir).
             </p>
             <p>
-              Pedagogo e artista, também está estudando desenvolvimento web, enquanto ministra aulas de robótica para o fundamental I, no Núcleo de Educação Integrada da Fundação Romi, em Santa Bárbara D'Oeste, onde reside.
+              Pedagogo, artista, e estudante de desenvolvimento web na Trybe. Atualmente, ministra aulas de programação para o fundamental I, no Núcleo de Educação Integrada da Fundação Romi, em Santa Bárbara D'Oeste, onde reside.
             </p>
             <p className='toFinalSpace'>
               Acredita no poder da arte e da educação, mas principalmente na força de conseguir alcançar as pessoas através de sua escrita.
